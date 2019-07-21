@@ -7,6 +7,8 @@ import {
   Grid,
   Header,
   Icon,
+  Form,
+  Modal,
   Image,
   List,
   Menu,
@@ -14,6 +16,7 @@ import {
   Segment,
   Sidebar,
   Visibility,
+  Card,
 } from 'semantic-ui-react'
 
 // Heads up!
@@ -96,7 +99,7 @@ class DesktopContainer extends Component {
                 </Menu.Item>
                 <Menu.Item as='a'>About</Menu.Item>
                 <Menu.Item as='a'>Recent Projects</Menu.Item>
-                <Menu.Item as='a'>Blog</Menu.Item>
+                {/* <Menu.Item as='a'>Blog</Menu.Item> */}
                 <Menu.Item as='a'>
                 Contact me
                 </Menu.Item>
@@ -146,7 +149,7 @@ class MobileContainer extends Component {
           </Menu.Item>
           <Menu.Item as='a'>About</Menu.Item>
           <Menu.Item as='a'>Recent Projects</Menu.Item>
-          <Menu.Item as='a'>Blog</Menu.Item> 
+          {/* <Menu.Item as='a'>Blog</Menu.Item>  */}
           <Menu.Item as='a'>Contact me</Menu.Item>
         </Sidebar>
 
@@ -195,17 +198,25 @@ const HomepageLayout = () => (
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={8}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-            Hello. I'm a full stack software developer who loves to write almost as much as I love to code.
+            <Header textAlign="center" as='h3' style={{ fontSize: '2em' }}>
+           I'm a full stack software developer who loves to write <em>almost</em> as much as I love to code.
             </Header>
           </Grid.Column>
-          <Grid.Column floated='right' width={6}>
-            <Image bordered rounded size='large' src='/images/wireframe/white-image.png' />
+          <Grid.Column textAlign="center" floated='right' width={6}>
+            <Image bordered circular size='large' src='https://avatars3.githubusercontent.com/u/38929577?s=460&v=4' />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
           <Grid.Column textAlign='center'>
-            <Button color="black" size='huge'>More about me</Button>
+            <Modal
+            trigger={ <Button color="black" size='huge'>More about me</Button>}>
+                <Segment> 
+                <p  style={{ fontSize: '1.33em' }}>Before becoming a software developer, I received my Bachelor's degree in Comparative Literature and English from Indiana University Bloomington, my Master's degree in English Literature from the University of Kansas, and a certificate in Technical Writing from Bellevue College. I currently attend Lambda School's Full Stack Web Development and Computer Science program, which I am projected to finish in early October 2019.</p>
+                <p  style={{ fontSize: '1.33em' }}>I have 6 years of experience teaching English as a second language to both children and adults, and teaching writing and composition at the university level. I also have experience managing a winning state election campaign in a competitive district.</p>
+                <p  style={{ fontSize: '1.33em' }}>Please feel free to contact me for a full resume or more information.</p>
+                </Segment>
+            </Modal>
+
           </Grid.Column>
         </Grid.Row>
       </Grid>
@@ -213,19 +224,65 @@ const HomepageLayout = () => (
     <Segment style={{ padding: '0em' }} vertical>
       <Grid celled='internally' columns='equal' stackable>
         <Grid.Row textAlign='center'>
-          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
+        <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
             <Header as='h3' style={{ fontSize: '2em' }}>
-              "What a Company"
+             Computer Languages
             </Header>
-            <p style={{ fontSize: '1.33em' }}>That is what they all say about us</p>
+            <p style={{ fontSize: '1.33em' }}>
+            <List>
+                <List.Item>Javascript</List.Item>
+                <List.Item>CSS3</List.Item>
+                <List.Item>Python</List.Item>
+            </List>
+            </p>
+            <Header as='h3' style={{ fontSize: '2em' }}>
+             Natural Languages
+            </Header>
+            <p style={{ fontSize: '1.33em' }}>
+            <List>
+                <List.Item>Italian</List.Item>
+                <List.Item>Spanish</List.Item>
+                <List.Item>Portuguese</List.Item>
+                <List.Item>Indonesian</List.Item>
+            </List>
+            </p>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
             <Header as='h3' style={{ fontSize: '2em' }}>
-              "I shouldn't have gone with their competitor."
+              Skills
+            </Header>
+            <p style={{ fontSize: '1.33em', textAlign: 'center' }}>
+            <List>
+                <List.Item>HTML</List.Item>
+                <List.Item>React.js</List.Item>
+                <List.Item>Gatsby.js</List.Item>
+                <List.Item>Node.js / Express</List.Item>
+                <List.Item>Knex.js</List.Item>
+                <List.Item>CSS Preprocessors (Sass, Less)</List.Item>
+                <List.Item>SQL Databases (Sqlite3, PostgreSQL)</List.Item>
+                <List.Item>noSQL Databases (Firebase)</List.Item>
+                <List.Item>Testing (Jest, Cypress)</List.Item>
+                <List.Item>Agile Methodologies</List.Item>
+                <List.Item>Writing</List.Item>
+                <List.Item>Editing</List.Item>
+            </List>
+            </p>
+          </Grid.Column>
+          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
+            <Header as='h3' style={{ fontSize: '2em' }}>
+              Interests
             </Header>
             <p style={{ fontSize: '1.33em' }}>
-              <Image avatar src='/images/avatar/large/nan.jpg' />
-              <b>Nan</b> Chief Fun Officer Acme Toys
+            <List>
+                <List.Item>Linguistics</List.Item>
+                <List.Item>Natural Language Processing</List.Item>
+                <List.Item>Web Development</List.Item>
+                <List.Item>Effective Documentation</List.Item>
+                <List.Item>Digital Humanities</List.Item>
+                <List.Item>20th Century History</List.Item>
+                <List.Item>Literature</List.Item>
+                <List.Item>Painting</List.Item>
+            </List>
             </p>
           </Grid.Column>
         </Grid.Row>
@@ -233,38 +290,57 @@ const HomepageLayout = () => (
     </Segment>
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Container text>
-        <Header as='h3' style={{ fontSize: '2em' }}>
-          Breaking The Grid, Grabs Your Attention
+        <Header as='h3' style={{ textAlign: 'center', fontSize: '2em' }}>
+            Recent Projects
         </Header>
         <p style={{ fontSize: '1.33em' }}>
-          Instead of focusing on content creation and hard work, we have learned how to master the
-          art of doing nothing by providing massive amounts of whitespace and generic content that
-          can seem massive, monolithic and worth your attention.
+         <Card.Group>
+             <Card>
+                 <Card.Content>
+                     <Card.Header>
+                         Recruiter Rules
+                     </Card.Header>
+                 </Card.Content>
+             </Card>
+             <Card>
+                 <Card.Content>
+                     <Card.Header>
+                         Life GPA
+                     </Card.Header>
+                 </Card.Content>
+             </Card>
+         </Card.Group>
         </p>
-        <Button as='a' size='large'>
-          Read More
-        </Button>
-        <Divider
-          as='h4'
-          className='header'
-          horizontal
-          style={{ margin: '3em 0em', textTransform: 'uppercase' }}
-        >
-          <a href='#'>Case Studies</a>
-        </Divider>
-        <Header as='h3' style={{ fontSize: '2em' }}>
-          Did We Tell You About Our Bananas?
-        </Header>
-        <p style={{ fontSize: '1.33em' }}>
-          Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but
-          it's really true. It took years of gene splicing and combinatory DNA research, but our
-          bananas can really dance.
-        </p>
-        <Button as='a' size='large'>
-          I'm Still Quite Interested
-        </Button>
       </Container>
     </Segment>
+    <Segment style={{ padding: '8em 0em' }} vertical>
+      <Container text>
+        <Header as='h3' style={{ textAlign: 'center', fontSize: '2em' }}>
+            Contact Me
+        </Header> 
+        <Form style={{ fontSize: '1.33em', 
+    textAlign: "center"  }}>
+            <Form.Input type="text" placeholder="name" /> 
+            <Form.Input type="text" placeholder="email" /> 
+            <Form.TextArea placeholder="Write message here . . ." type="text" /> 
+            <Form.Button color="black">send</Form.Button>
+        </Form>
+        <p style={{ fontSize: '1.33em' }}>
+         
+        </p>
+      </Container>
+    </Segment>
+    {/* <Segment style={{ padding: '8em 0em' }} vertical>
+      <Container text>
+        <Header as='h3' style={{ textAlign: 'center', fontSize: '2em' }}>
+            Blog
+        </Header>
+        
+        <p style={{ fontSize: '1.33em' }}>
+         
+        </p>
+      </Container>
+    </Segment> */}
     <Segment color="black" inverted vertical style={{ padding: '5em 0em' }}>
       <Container>
         <Grid divided inverted stackable>

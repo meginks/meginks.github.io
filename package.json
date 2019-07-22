@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/meginks/meginks.github.io",
+  "homepage": "www.meganjones.dev",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",

@@ -210,7 +210,7 @@ const HomepageLayout = () => (
         <Grid.Row>
           <Grid.Column textAlign='center'>
             <Modal
-            trigger={ <Button color="black" size='huge'>More about me</Button>}>
+            trigger={ <Button color="black" size='huge'>about me</Button>}>
                 <Segment> 
                 <p  style={{ fontSize: '1.33em' }}>Before becoming a software developer, I received my Bachelor's degree in Comparative Literature and English from Indiana University Bloomington, my Master's degree in English Literature from the University of Kansas, and a certificate in Technical Writing from Bellevue College. I currently attend Lambda School's Full Stack Web Development and Computer Science program, which I am projected to finish in early October 2019.</p>
                 <p  style={{ fontSize: '1.33em' }}>I have 6 years of experience teaching English as a second language to both children and adults, and teaching writing and composition at the university level. I also have experience managing a winning state election campaign in a competitive district.</p>
@@ -318,7 +318,7 @@ const HomepageLayout = () => (
                          Life GPA
                      </Card.Header>
                      <Card.Description>
-                       Life GPA is a task management app designed for 
+                       Life GPA is a task management app.
                      </Card.Description>
                  </Card.Content>
              </Card>

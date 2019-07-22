@@ -18,6 +18,7 @@ import {
   Visibility,
   Card,
 } from 'semantic-ui-react'
+import {Link} from 'react-router-dom';
 
 // Heads up!
 // We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
@@ -101,7 +102,7 @@ class DesktopContainer extends Component {
                 <Menu.Item as='a'>Recent Projects</Menu.Item>
                 {/* <Menu.Item as='a'>Blog</Menu.Item> */}
                 <Menu.Item as='a'>
-                Contact me
+                Contact
                 </Menu.Item>
               </Container>
             </Menu>
@@ -150,7 +151,7 @@ class MobileContainer extends Component {
           <Menu.Item as='a'>About</Menu.Item>
           <Menu.Item as='a'>Recent Projects</Menu.Item>
           {/* <Menu.Item as='a'>Blog</Menu.Item>  */}
-          <Menu.Item as='a'>Contact me</Menu.Item>
+          <Menu.Item as='a'>Contact</Menu.Item>
         </Sidebar>
 
         <Sidebar.Pusher dimmed={sidebarOpened}>
@@ -221,69 +222,75 @@ const HomepageLayout = () => (
         </Grid.Row>
       </Grid>
     </Segment>
-    <Segment style={{ padding: '0em' }} vertical>
-      <Grid celled='internally' columns='equal' stackable>
+    <Segment style={{ padding: '0em', margin: '1em' }} vertical>
+      <Grid  columns='equal' stackable>
         <Grid.Row textAlign='center'>
         <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
+        <Segment inverted color="black">
+            <Header as='h3' style={{ fontSize: '2em', textAlign: 'left' }}>
              Computer Languages
             </Header>
-            <p style={{ fontSize: '1.33em' }}>
+            <p style={{ fontSize: '1.33em', textAlign: 'left' }}>
             <List>
-                <List.Item>Javascript</List.Item>
-                <List.Item>CSS3</List.Item>
-                <List.Item>Python</List.Item>
+                <List.Item><List.Icon name="js" size="big"/><List.Content>Javascript</List.Content></List.Item>
+                <List.Item><List.Icon name="css3" size="big" /><List.Content>CSS3</List.Content></List.Item>
+                <List.Item><List.Icon name="python" size="big" /><List.Content>Python</List.Content></List.Item>
             </List>
             </p>
-            <Header as='h3' style={{ fontSize: '2em' }}>
+            <Header as='h3' style={{ fontSize: '2em', textAlign: 'left' }}>
              Natural Languages
             </Header>
-            <p style={{ fontSize: '1.33em' }}>
+            <p style={{ fontSize: '1.33em', textAlign: 'left' }}>
             <List>
-                <List.Item>Italian</List.Item>
-                <List.Item>Spanish</List.Item>
-                <List.Item>Portuguese</List.Item>
-                <List.Item>Indonesian</List.Item>
+                <List.Item><List.Icon size="big" name="language"/><List.Content>Italian</List.Content></List.Item>
+                <List.Item><List.Icon size="big" name="language"/><List.Content>Spanish</List.Content></List.Item>
+                <List.Item><List.Icon size="big" name="language"/><List.Content>Portuguese</List.Content></List.Item>
+                <List.Item><List.Icon size="big" name="language"/><List.Content>Indonesian</List.Content></List.Item>
             </List>
             </p>
+            </Segment>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
+            <Segment inverted color="black">
+            <Header as='h3' style={{ fontSize: '2em', textAlign: 'left' }}>
               Skills
             </Header>
-            <p style={{ fontSize: '1.33em', textAlign: 'center' }}>
+            <p style={{ fontSize: '1.33em', textAlign: 'left' }}>
             <List>
-                <List.Item>HTML</List.Item>
-                <List.Item>React.js</List.Item>
-                <List.Item>Gatsby.js</List.Item>
-                <List.Item>Node.js / Express</List.Item>
-                <List.Item>Knex.js</List.Item>
-                <List.Item>CSS Preprocessors (Sass, Less)</List.Item>
-                <List.Item>SQL Databases (Sqlite3, PostgreSQL)</List.Item>
-                <List.Item>noSQL Databases (Firebase)</List.Item>
-                <List.Item>Testing (Jest, Cypress)</List.Item>
-                <List.Item>Agile Methodologies</List.Item>
-                <List.Item>Writing</List.Item>
-                <List.Item>Editing</List.Item>
+                <List.Item><List.Icon size="big" name="html5" /><List.Content>HTML5</List.Content></List.Item>
+                <List.Item><List.Icon size="big" name="react" /><List.Content>React.js</List.Content></List.Item>
+                <List.Item><List.Icon size="big" name="node" /><List.Content>Node.js/Express</List.Content></List.Item>
+                <List.Item><List.Icon name="code" size="big" /><List.Content>Knex.js</List.Content></List.Item>
+                <List.Item><List.Icon name="sass" size="big"/><List.Content>Sass</List.Content></List.Item>
+                <List.Item><List.Icon name="less" size="big"/><List.Content>Less</List.Content></List.Item>
+                <List.Item><List.Icon name="database" size="big" /><List.Content>SQL and noSQL databases</List.Content></List.Item>
+                <List.Item><List.Icon size="big" name="key" /><List.Content>Authentication</List.Content></List.Item>
+                <List.Item><List.Icon name="lab" size="big" /><List.Content>Testing</List.Content></List.Item>
+                <List.Item><List.Icon name="sync" size="big" /><List.Content>Agile Methodologies</List.Content></List.Item>
+                <List.Item><List.Icon name="write" size="big" /><List.Content>Writing</List.Content></List.Item>
+                <List.Item><List.Icon name="edit" size="big" /><List.Content>Editing</List.Content></List.Item>
             </List>
             </p>
+            </Segment>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
+            <Segment inverted color="black">
+            <Header as='h3' style={{ fontSize: '2em', textAlign: 'left' }}>
               Interests
             </Header>
-            <p style={{ fontSize: '1.33em' }}>
+            <p style={{ fontSize: '1.33em', textAlign: 'left' }}>
             <List>
-                <List.Item>Linguistics</List.Item>
-                <List.Item>Natural Language Processing</List.Item>
-                <List.Item>Web Development</List.Item>
-                <List.Item>Effective Documentation</List.Item>
-                <List.Item>Digital Humanities</List.Item>
-                <List.Item>20th Century History</List.Item>
-                <List.Item>Literature</List.Item>
-                <List.Item>Painting</List.Item>
+                <List.Item><List.Icon name="language" size="big" /><List.Content>Linguistics</List.Content></List.Item>
+                <List.Item><List.Icon name="keyboard" size="big" /><List.Content>Natural Language Processing</List.Content></List.Item>
+                <List.Item><List.Icon name="computer" size="big" /><List.Content>Web Development</List.Content></List.Item>
+                <List.Item><List.Icon name="file alternate outline" size="big"/><List.Content>Effective Documentation</List.Content></List.Item>
+                <List.Item><List.Icon name="user" size="big" /><List.Content>Digital Humanities</List.Content></List.Item>
+                <List.Item><List.Icon name="university" size="big"/><List.Content>20th Century History</List.Content></List.Item>
+                <List.Item><List.Icon name="book" size="big"/><List.Content>Literature</List.Content></List.Item>
+                <List.Item><List.Icon name="paint brush" size="big" /><List.Content>Painting</List.Content></List.Item>
             </List>
             </p>
+            </Segment>
           </Grid.Column>
         </Grid.Row>
       </Grid>
@@ -300,6 +307,9 @@ const HomepageLayout = () => (
                      <Card.Header>
                          Recruiter Rules
                      </Card.Header>
+                     <Card.Description>
+                        Recruiter Rules is a rule engine built for recruiters, so they can create rules for when to send candidate information where, and then automatically route candidate information to the correct person's email according to their own rules.
+                     </Card.Description>
                  </Card.Content>
              </Card>
              <Card>
@@ -307,6 +317,9 @@ const HomepageLayout = () => (
                      <Card.Header>
                          Life GPA
                      </Card.Header>
+                     <Card.Description>
+                       Life GPA is a task management app designed for 
+                     </Card.Description>
                  </Card.Content>
              </Card>
          </Card.Group>
@@ -353,16 +366,16 @@ const HomepageLayout = () => (
                software developer. writer. human.
               </p>
               <List link inverted horizontal>
-              <List.Item as='a'><List.Icon name="github" size="large"/></List.Item>
-                <List.Item as='a'><List.Icon name="linkedin" size="large" /></List.Item>
-                <List.Item as='a'><List.Icon name="medium" size="large" /></List.Item>
-                <List.Item as='a'><List.Icon name="twitter" size="large"/></List.Item>
-                <List.Item as='a'><List.Icon name="mail outline" size="large"/></List.Item>
+              <List.Item as='a' href='https://github.com/meginks' target="_blank"><List.Icon name="github square" size="big"/></List.Item>
+                <List.Item as='a' href="https://www.linkedin.com/in/megan-jones123/" target="_blank"><List.Icon name="linkedin" size="big" /></List.Item>
+                <List.Item as='a' href="https://medium.com/@meganjones.dev" target="_blank"><List.Icon name="medium" size="big" /></List.Item>
+                <List.Item as='a' target="_blank" href="https://twitter.com/meg_inks"><List.Icon name="twitter square" size="big"/></List.Item>
+                <List.Item as='a' href="mailto:meganjones.dev@gmail.com"><List.Icon name="mail square" size="big"/></List.Item>
               </List>
             </Grid.Column>
           </Grid.Row>
 
-              <p>&copy; 2019. All Rights Reserved.</p>
+              <p>&copy; 2019. All rights reserved.</p>
             
         </Grid>
       </Container>

@@ -19,6 +19,8 @@ import {
   Card,
 } from 'semantic-ui-react'
 import {Link} from 'react-router-dom';
+import SkillsInterests from './SkillsInterests';
+import Projects from './Projects';
 
 // Heads up!
 // We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
@@ -195,8 +197,8 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
-    <Segment style={{ padding: '8em 0em' }} vertical>
-      <Grid container stackable verticalAlign='middle'>
+  
+      <Grid  style={{ padding: '8em 0em' }} container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={8}>
             <Header textAlign="center" as='h3' style={{ fontSize: '2em' }}>
@@ -210,150 +212,26 @@ const HomepageLayout = () => (
         <Grid.Row>
           <Grid.Column textAlign='center'>
             <Modal
-            trigger={ <Button color="black" size='huge'>about me</Button>}>
-                <Segment> 
+            trigger={ <Button color="black" size='huge'>more about me</Button>}>
+                <Segment style={{ padding: '5em' }}> 
+                <Header as="h3">More about me. . . </Header>
                 <p  style={{ fontSize: '1.33em' }}>Before becoming a software developer, I received my Bachelor's degree in Comparative Literature and English from Indiana University Bloomington, my Master's degree in English Literature from the University of Kansas, and a certificate in Technical Writing from Bellevue College. I currently attend Lambda School's Full Stack Web Development and Computer Science program, which I am projected to finish in early October 2019.</p>
-                <p  style={{ fontSize: '1.33em' }}>I have 6 years of experience teaching English as a second language to both children and adults, and teaching writing and composition at the university level. I also have experience managing a winning state election campaign in a competitive district.</p>
-                <p  style={{ fontSize: '1.33em' }}>Please feel free to contact me for a full resume or more information.</p>
+                <p  style={{ fontSize: '1.33em' }}>I have 6 years of experience teaching English as a second language to both children and adults, and I taught writing and composition at the university level for two years. I also have experience managing a winning state election campaign in a competitive district.</p>
+                <p  style={{ fontSize: '1.33em' }}>
+                  For as long as I can remember, I've always been fascinated by language. As a child, I tried to learn as many other languages as I could (human ones that is), so in addition to increasing my ability to communicate with others with whom I would otherwise be unable, I learned how to learn syntax and structure. It was only a matter of time before that linguistic interest would extend to computer languages as well. Now, I'm particularly interested in the intersections between natural and computer languages.
+                </p>
+                <p  style={{ fontSize: '1.33em' }}>Please feel free to contact me for a full resume and/or more information.</p>
                 </Segment>
             </Modal>
 
           </Grid.Column>
         </Grid.Row>
       </Grid>
-    </Segment>
-    <Segment style={{ padding: '0em', margin: '1em' }} vertical>
-      <Grid  columns='equal' stackable>
-        <Grid.Row textAlign='center'>
-        <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-        <Segment inverted color="black">
-            <Header as='h3' style={{ fontSize: '2em', textAlign: 'left' }}>
-             Computer Languages
-            </Header>
-            <p style={{ fontSize: '1.33em', textAlign: 'left' }}>
-            <List>
-                <List.Item><List.Icon name="js" size="big"/><List.Content>Javascript</List.Content></List.Item>
-                <List.Item><List.Icon name="css3" size="big" /><List.Content>CSS3</List.Content></List.Item>
-                <List.Item><List.Icon name="python" size="big" /><List.Content>Python</List.Content></List.Item>
-            </List>
-            </p>
-            <Header as='h3' style={{ fontSize: '2em', textAlign: 'left' }}>
-             Natural Languages
-            </Header>
-            <p style={{ fontSize: '1.33em', textAlign: 'left' }}>
-            <List>
-                <List.Item><List.Icon size="big" name="language"/><List.Content>Italian</List.Content></List.Item>
-                <List.Item><List.Icon size="big" name="language"/><List.Content>Spanish</List.Content></List.Item>
-                <List.Item><List.Icon size="big" name="language"/><List.Content>Portuguese</List.Content></List.Item>
-                <List.Item><List.Icon size="big" name="language"/><List.Content>Indonesian</List.Content></List.Item>
-            </List>
-            </p>
-            </Segment>
-          </Grid.Column>
-          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Segment inverted color="black">
-            <Header as='h3' style={{ fontSize: '2em', textAlign: 'left' }}>
-              Skills
-            </Header>
-            <p style={{ fontSize: '1.33em', textAlign: 'left' }}>
-            <List>
-                <List.Item><List.Icon size="big" name="html5" /><List.Content>HTML5</List.Content></List.Item>
-                <List.Item><List.Icon size="big" name="react" /><List.Content>React.js</List.Content></List.Item>
-                <List.Item><List.Icon size="big" name="node" /><List.Content>Node.js/Express</List.Content></List.Item>
-                <List.Item><List.Icon name="code" size="big" /><List.Content>Knex.js</List.Content></List.Item>
-                <List.Item><List.Icon name="sass" size="big"/><List.Content>Sass</List.Content></List.Item>
-                <List.Item><List.Icon name="less" size="big"/><List.Content>Less</List.Content></List.Item>
-                <List.Item><List.Icon name="database" size="big" /><List.Content>SQL and noSQL databases</List.Content></List.Item>
-                <List.Item><List.Icon size="big" name="key" /><List.Content>Authentication</List.Content></List.Item>
-                <List.Item><List.Icon name="lab" size="big" /><List.Content>Testing</List.Content></List.Item>
-                <List.Item><List.Icon name="sync" size="big" /><List.Content>Agile Methodologies</List.Content></List.Item>
-                <List.Item><List.Icon name="write" size="big" /><List.Content>Writing</List.Content></List.Item>
-                <List.Item><List.Icon name="edit" size="big" /><List.Content>Editing</List.Content></List.Item>
-            </List>
-            </p>
-            </Segment>
-          </Grid.Column>
-          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Segment inverted color="black">
-            <Header as='h3' style={{ fontSize: '2em', textAlign: 'left' }}>
-              Interests
-            </Header>
-            <p style={{ fontSize: '1.33em', textAlign: 'left' }}>
-            <List>
-                <List.Item><List.Icon name="language" size="big" /><List.Content>Linguistics</List.Content></List.Item>
-                <List.Item><List.Icon name="keyboard" size="big" /><List.Content>Natural Language Processing</List.Content></List.Item>
-                <List.Item><List.Icon name="computer" size="big" /><List.Content>Web Development</List.Content></List.Item>
-                <List.Item><List.Icon name="file alternate outline" size="big"/><List.Content>Effective Documentation</List.Content></List.Item>
-                <List.Item><List.Icon name="user" size="big" /><List.Content>Digital Humanities</List.Content></List.Item>
-                <List.Item><List.Icon name="university" size="big"/><List.Content>20th Century History</List.Content></List.Item>
-                <List.Item><List.Icon name="book" size="big"/><List.Content>Literature</List.Content></List.Item>
-                <List.Item><List.Icon name="paint brush" size="big" /><List.Content>Painting</List.Content></List.Item>
-            </List>
-            </p>
-            </Segment>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-    </Segment>
-    <Segment style={{ padding: '8em 0em' }} vertical>
-      <Container text>
-        <Header as='h3' style={{ textAlign: 'center', fontSize: '2em' }}>
-            Recent Projects
-        </Header>
-        <p style={{ fontSize: '1.33em' }}>
-         <Card.Group>
-             <Card>
-                 <Card.Content>
-                     <Card.Header>
-                         Recruiter Rules
-                     </Card.Header>
-                     <Card.Description>
-                        Recruiter Rules is a rule engine built for recruiters, so they can create rules for when to send candidate information where, and then automatically route candidate information to the correct person's email according to their own rules.
-                     </Card.Description>
-                 </Card.Content>
-             </Card>
-             <Card>
-                 <Card.Content>
-                     <Card.Header>
-                         Life GPA
-                     </Card.Header>
-                     <Card.Description>
-                       Life GPA is a task management app.
-                     </Card.Description>
-                 </Card.Content>
-             </Card>
-         </Card.Group>
-        </p>
-      </Container>
-    </Segment>
-    <Segment style={{ padding: '8em 0em' }} vertical>
-      <Container text>
-        <Header as='h3' style={{ textAlign: 'center', fontSize: '2em' }}>
-            Contact Me
-        </Header> 
-        <Form style={{ fontSize: '1.33em', 
-    textAlign: "center"  }}>
-            <Form.Input type="text" placeholder="name" /> 
-            <Form.Input type="text" placeholder="email" /> 
-            <Form.TextArea placeholder="Write message here . . ." type="text" /> 
-            <Form.Button color="black">send</Form.Button>
-        </Form>
-        <p style={{ fontSize: '1.33em' }}>
-         
-        </p>
-      </Container>
-    </Segment>
-    {/* <Segment style={{ padding: '8em 0em' }} vertical>
-      <Container text>
-        <Header as='h3' style={{ textAlign: 'center', fontSize: '2em' }}>
-            Blog
-        </Header>
-        
-        <p style={{ fontSize: '1.33em' }}>
-         
-        </p>
-      </Container>
-    </Segment> */}
+   
+    <SkillsInterests />
+    <Projects />
+  
+   
     <Segment color="black" inverted vertical style={{ padding: '5em 0em' }}>
       <Container>
         <Grid divided inverted stackable>

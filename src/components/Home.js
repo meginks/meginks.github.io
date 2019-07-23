@@ -20,7 +20,7 @@ import {
 } from 'semantic-ui-react'
 import {Link} from 'react-router-dom';
 import SkillsInterests from './SkillsInterests';
-import Projects from './Projects';
+import Projects from './Projects.js';
 
 // Heads up!
 // We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
@@ -100,9 +100,6 @@ class DesktopContainer extends Component {
                 <Menu.Item as='a' active>
                   Home
                 </Menu.Item>
-                <Menu.Item as='a'>About</Menu.Item>
-                <Menu.Item as='a'>Recent Projects</Menu.Item>
-                {/* <Menu.Item as='a'>Blog</Menu.Item> */}
                 <Menu.Item as='a'>
                 Contact
                 </Menu.Item>
@@ -150,8 +147,6 @@ class MobileContainer extends Component {
           <Menu.Item as='a' active>
             Home
           </Menu.Item>
-          <Menu.Item as='a'>About</Menu.Item>
-          <Menu.Item as='a'>Recent Projects</Menu.Item>
           {/* <Menu.Item as='a'>Blog</Menu.Item>  */}
           <Menu.Item as='a'>Contact</Menu.Item>
         </Sidebar>
@@ -166,7 +161,7 @@ class MobileContainer extends Component {
             <Container>
               <Menu inverted pointing secondary size='large'>
                 <Menu.Item onClick={this.handleToggle}>
-                  <Icon name='sidebar' />
+                  <Icon name='sidebar' size="big" />
                 </Menu.Item>
               </Menu>
             </Container>
@@ -231,7 +226,6 @@ const HomepageLayout = () => (
     <SkillsInterests />
     <Projects />
   
-   
     <Segment color="black" inverted vertical style={{ padding: '5em 0em' }}>
       <Container>
         <Grid divided inverted stackable>

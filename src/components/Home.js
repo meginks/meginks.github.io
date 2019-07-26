@@ -44,10 +44,11 @@ const HomepageHeading = ({ mobile }) => (
       style={{
         fontSize: mobile ? '2em' : '4em',
         fontWeight: 'normal',
-        marginBottom: 0,
+        marginBottom: '.5em',
         marginTop: mobile ? '1.5em' : '3em',
       }}
     />
+    
     <Header
       as='h2'
       content='software developer. writer. human.'
@@ -58,7 +59,6 @@ const HomepageHeading = ({ mobile }) => (
         marginTop: mobile ? '0.5em' : '1.5em',
       }}
     />
-    
   </Container>
 )
 
@@ -84,11 +84,11 @@ class DesktopContainer extends Component {
           onBottomPassedReverse={this.hideFixedMenu}
         >
           <Segment
-            inverted
+            inverted 
             textAlign='center'
             style={{ minHeight: 700, padding: '1em 0em' }}
             vertical
-          >
+          > 
             <Menu
               fixed={fixed ? 'top' : null}
               inverted={!fixed}
@@ -97,6 +97,11 @@ class DesktopContainer extends Component {
               size='large'
             >
               <Container>
+                <Menu.Item>
+                <Icon name="code" size="large"/>
+                <Icon name="pencil" size="large"/>
+                <Icon name="user" size="large"/>
+                </Menu.Item>
                 <Menu.Item as='a' active>
                   Home
                 </Menu.Item>
@@ -236,7 +241,7 @@ const HomepageLayout = () => (
               </Header>
               <p>
                software developer. writer. human.
-              </p>
+               </p>
               <List link inverted horizontal>
               <List.Item as='a' href='https://github.com/meginks' target="_blank"><List.Icon name="github square" size="big"/></List.Item>
                 <List.Item as='a' href="https://www.linkedin.com/in/megan-jones123/" target="_blank"><List.Icon name="linkedin" size="big" /></List.Item>
@@ -246,9 +251,7 @@ const HomepageLayout = () => (
               </List>
             </Grid.Column>
           </Grid.Row>
-
-              <p>&copy; 2019. All rights reserved.</p>
-            
+              <p>&copy; 2019. All rights reserved.</p>       
         </Grid>
       </Container>
     </Segment>

@@ -4,11 +4,13 @@ import React from 'react';
 const Tacos = () => {
     return (
         <div>
-             /** IMAGE */
-             /** WHAT IT IS */
+            /** IMAGE */
+             /** CURRENT STATUS */
             /** TECH STACK */
+            /** WHAT IT IS */
             /** WHAT I DID */
             /** WHAT I LEARNED */
+            /** RELEVANT LINKS */
         </div>
     )
 }

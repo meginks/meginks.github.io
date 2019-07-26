@@ -5,6 +5,7 @@ import {
     Segment,
     Modal,
     Grid, 
+    Card,
     List, 
     Button, 
     Image,
@@ -75,6 +76,11 @@ const Projects = () => {
                 </Modal>
                 </Grid.Column>
                 </Grid>
+                <Card image="" />
+                <Card image="https://images.unsplash.com/photo-1544216717-3bbf52512659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" header="Wellness Bet" />
+                <Card image="https://images.unsplash.com/photo-1503596476-1c12a8ba09a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" header="Black Hole" />
+                <Card image="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80" header="Life GPA" />
+                <Card image="https://images.unsplash.com/photo-1549354324-290af3126793?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" header="International Rural School Report" />
             </div>
       </Container>
     )

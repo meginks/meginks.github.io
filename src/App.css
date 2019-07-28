@@ -11,12 +11,14 @@ html, body, #app, #app>div {
 .fontFellEnglish {
   font-family: 'IM Fell English SC', serif;
   font-size: 3rem;
+  color: #503945;
 
 }
 
 .fontAlegreya {
   font-family: 'Alegreya', serif;
   font-size: 2rem;
+  color: #503945;
 }
 
 .fontGaramond {
@@ -35,4 +37,81 @@ html, body, #app, #app>div {
 .offset-def {
   margin-left: 20%;
   font-size: 1rem;
+} 
+
+.name {
+  display: block;
 }
+
+@media only screen and (max-width: 750px) {
+ 
+.fontFellEnglish {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 2rem;
+  color: #503945;
+
+}
+
+.fontAlegreya {
+  font-family: 'Alegreya', serif;
+  font-size: 1.5rem;
+  color: #503945;
+}
+
+.fontGaramond {
+  font-family: 'EB Garamond', serif;
+}
+
+.definition {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  font-size: 1rem;
+  padding: .5rem;
+  margin: .5rem;
+}
+
+.offset-def {
+  margin-left: 20%;
+  font-size: 1rem;
+}
+}
+
+@media only screen and (max-width: 400px) {
+ 
+  .fontFellEnglish {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 2rem;
+    color: #503945;
+  
+  } 
+
+  .fontFellEnglish .name {
+    display: block; 
+    overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  }
+  
+  .fontAlegreya {
+    font-family: 'Alegreya', serif;
+    font-size: 1.5rem;
+    color: #503945;
+  }
+  
+  .fontGaramond {
+    font-family: 'EB Garamond', serif;
+  }
+  
+  .definition {
+    top: 25%;
+    left: 25%;
+    font-size: 1rem;
+    padding: .5rem;
+    margin: .5rem;
+  }
+  
+  .offset-def {
+    font-size: 1rem;
+  }
+  }

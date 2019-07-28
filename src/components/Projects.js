@@ -7,6 +7,7 @@ import {
     Grid, 
     Card,
     List, 
+    Item,
     Button, 
     Image,
     Icon
@@ -21,62 +22,79 @@ const Projects = () => {
         <Header as='h3' centered style={{ textAlign: 'center', fontSize: '2em' }}>
             Projects
         </Header>
-        <div style={{ fontSize: '1.33em', textAlign: 'center' }}>
-      <Grid stackable width={15}>
-          <Grid.Column width={5}>
-                <Modal
-                trigger={
-               <Segment color="black" inverted>
-                <Image src="https://images.unsplash.com/photo-1524412529635-a258ed66c010?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=985&q=80" alt="tacos" />
-                <Header>Tago Log</Header>
-                </Segment>}
-                >
-                    Test
-                </Modal>
-                <Modal trigger={
-            <Segment color="black" inverted>
-                <Image src="https://images.unsplash.com/photo-1551836022-b06985bceb24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="recruiter" />
-               <Header>Recruiter Rules</Header>
-               </Segment>}>
-                   Test
-               </Modal>
-               </Grid.Column>
+        <Item.Group>
+        <Item>
+            <Item.Image src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" tiny alt="business meeting"/> 
+            <Item.Content>
+                <Item.Header>
+                    Recruiter Rules
+                </Item.Header>
+                <Item.Meta>
+                Lambda School Labs Project
+                </Item.Meta>
+                <Item.Description>
 
-               <Grid.Column width={5}>
-                   <Modal trigger={
-                <Segment color="black" inverted>
-               <Image src="https://images.unsplash.com/photo-1544216717-3bbf52512659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="2 women exercising" />
-               <Header>Wellness Bet</Header>
-               </Segment>}>
-                   Test
-               </Modal>
-              <Modal trigger={
-               <Segment inverted color="black">
-               <Image src="https://images.unsplash.com/photo-1503596476-1c12a8ba09a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" alt="black hole" />
-               <Header>Black Hole</Header>
-               </Segment>}>
-                   Test
-               </Modal>
-               </Grid.Column>
+                </Item.Description>
+                <Item.Extra>
 
-               <Grid.Column width={5}>
-                   <Modal trigger={
-               <Segment inverted color="black">
-               <Image src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80" alt="checklist" />
-                <Header>Life GPA</Header>
-                </Segment>}>
-                    Test
-                </Modal>
-                <Modal trigger={
-                <Segment inverted color="black">
-                <Image src="https://images.unsplash.com/photo-1549354324-290af3126793?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="school" />
-                <Header>International Rural School Report</Header>
-                </Segment>}>
-                    Test
-                </Modal>
-                </Grid.Column>
-                </Grid>
-            </div>
+                </Item.Extra>
+            </Item.Content>
+        </Item>
+        <Item>
+            <Item.Image src="https://images.unsplash.com/photo-1503596476-1c12a8ba09a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80" tiny alt="trash" /> 
+            <Item.Content>
+                <Item.Header>
+                Black Hole
+                </Item.Header>
+                <Item.Meta>
+                March 2019 Lambda School Build Week Project
+                </Item.Meta>
+                <Item.Description>
+                    
+                </Item.Description>
+                <Item.Extra>
+           
+                </Item.Extra>
+            </Item.Content>
+        </Item>
+
+        <Item>
+            <Item.Image src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80" alt="to do list" tiny /> 
+            <Item.Content>
+                <Item.Header>
+                Life GPA
+                </Item.Header>
+                <Item.Meta>
+                Feb 2019 Lambda School Build Week Project 
+                </Item.Meta>
+                <Item.Description>
+
+                </Item.Description>
+                <Item.Extra>
+
+                </Item.Extra>
+            </Item.Content>
+        </Item>
+ 
+        <Item>
+            <Item.Image src="https://images.unsplash.com/photo-1549354324-290af3126793?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="school kids" tiny /> 
+            <Item.Content>
+                <Item.Header>
+                International Rural School Report
+                </Item.Header>
+                <Item.Meta>
+                Jan 2019 Lambda School Build Week Project
+                </Item.Meta>
+                <Item.Description>
+
+                </Item.Description>
+                <Item.Extra>
+
+                </Item.Extra>
+            </Item.Content>
+        </Item>
+        </Item.Group>
+   
       </Container>
     )
 };

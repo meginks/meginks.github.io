@@ -20,6 +20,7 @@ import {
 } from 'semantic-ui-react'
 import {Link} from 'react-router-dom';
 import SkillsInterests from './SkillsInterests';
+import InterestsSkills from './InterestsSkills';
 import Projects from './Projects.js';
 
 // Heads up!
@@ -227,7 +228,6 @@ const HomepageLayout = () => (
           </Grid.Column>
         </Grid.Row>
       </Grid>
-   
     <SkillsInterests />
     <Projects />
   

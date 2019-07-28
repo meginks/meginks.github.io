@@ -10,13 +10,13 @@ html, body, #app, #app>div {
 
 .fontFellEnglish {
   font-family: 'IM Fell English SC', serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
 
 }
 
 .fontAlegreya {
   font-family: 'Alegreya', serif;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .fontGaramond {
@@ -27,8 +27,12 @@ html, body, #app, #app>div {
   position: fixed;
   top: 50%;
   left: 50%;
+  font-size: 2rem;
+  padding: .5rem;
+  margin: .5rem;
 }
 
 .offset-def {
   margin-left: 20%;
+  font-size: 1rem;
 }

@@ -3,10 +3,80 @@ html, body, #app, #app>div {
  background-color: #ece9ea;
 }
 
+.fixed-bottom {
+  position: fixed;
+  top: 80%;
+  left: 50%;
+}
+
+.heading {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 2rem;
+  color: #503945;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  color: #503945;
+  font-family: 'Alegreya', serif;
+  text-align: left;
+
+}
+
+
+
 .container {
   height: 100%;
   max-width: 100%;
 } 
+
+
+
+.divider {
+ background-color: #503945;
+ height: 1px; 
+ width: 90%;
+ margin: 2%;
+}
+
+.text-container {
+  margin: 2rem 5rem;
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} 
+
+.avatar {
+  border-radius: 50%;
+  border: 1px solid  #503945;
+  text-align: center;
+  margin: .5rem; 
+  max-width: 200px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+
+a {
+  color: #503945;
+}
+
+a:hover {
+  color: #646d13;
+}
+
+
+li a {
+  color: #503945;
+  margin: 2rem;
+}
+
+li a:hover {
+  color: #646d13;
+  text-decoration: underline;
+}
 
 .fontFellEnglish {
   font-family: 'IM Fell English SC', serif;
@@ -17,7 +87,7 @@ html, body, #app, #app>div {
 
 .fontAlegreya {
   font-family: 'Alegreya', serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #503945;
 }
 
@@ -41,6 +111,14 @@ html, body, #app, #app>div {
 
 .name {
   display: block;
+} 
+
+.menu {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 2rem;
+  display: flex; 
+  list-style-type: none;
+ 
 }
 
 @media only screen and (max-width: 750px) {
@@ -62,6 +140,26 @@ html, body, #app, #app>div {
   font-family: 'EB Garamond', serif;
 }
 
+.menu {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-around;
+  
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+
+
+
+li {
+  margin: .25rem;
+}
+
 .definition {
   position: fixed;
   top: 50%;
@@ -81,10 +179,18 @@ html, body, #app, #app>div {
  
   .fontFellEnglish {
     font-family: 'IM Fell English SC', serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #503945;
   
   } 
+
+  li a {
+    color: #503945;
+  }
+  
+  li a:hover {
+    color: #646d13
+  }
 
   .fontFellEnglish .name {
     display: block; 

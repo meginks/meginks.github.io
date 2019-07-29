@@ -23,7 +23,13 @@ html, body, #app, #app>div {
 
 }
 
-
+.circle {
+  border: 3px solid #503945;
+  border-radius: 50%; 
+  padding: 1rem;
+  max-width: 100px;
+  max-height: 100px;
+}
 
 .container {
   height: 100%;
@@ -85,6 +91,12 @@ li a:hover {
 
 }
 
+.fontFellEnglish2 {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 2rem;
+  color: #503945;
+}
+
 .fontAlegreya {
   font-family: 'Alegreya', serif;
   font-size: 1.5rem;
@@ -121,6 +133,7 @@ li a:hover {
   top: 0%;
   left: 0%;
   list-style-type: none;
+ background-color: #ece9ea;
  
 }
 
@@ -131,6 +144,12 @@ li a:hover {
   font-size: 2rem;
   color: #503945;
 
+} 
+
+.fontFellEnglish2 {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 1.5rem;
+  color: #503945;
 }
 
 .fontAlegreya {
@@ -149,14 +168,13 @@ li a:hover {
   display: flex;
   flex-direction: column; 
   justify-content: space-around;
+  border: 2px solid #503945;
   
 }
 
 .underline {
   text-decoration: underline;
 }
-
-
 
 
 li {

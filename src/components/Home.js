@@ -5,9 +5,9 @@ import SocialMenu from './SocialMenu'
 function App() {
     return (
       <div id="app">
-        <div>
+        
        <Menu />
-       </div>
+      
         <div className="definition">
         <div> <h1 className="fontFellEnglish name" >Megan Jones </h1></div>
         

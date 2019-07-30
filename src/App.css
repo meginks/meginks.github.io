@@ -16,12 +16,20 @@ html, body, #app, #app>div {
 }
 
 .paragraph {
-  font-size: 1.5rem;
   color: #503945;
   font-family: 'Alegreya', serif;
   text-align: left;
+  font-size: 1.5rem;
 
 }
+
+.project-icon {
+  
+  padding: 2rem;
+
+}
+
+
 
 .circle {
   border: 3px solid #503945;
@@ -46,8 +54,8 @@ html, body, #app, #app>div {
 }
 
 .text-container {
-  margin: 2rem 5rem;
-  padding: 2rem 5rem;
+  margin: 2rem 3rem;
+  padding: 2rem 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,8 +79,12 @@ a {
 
 a:hover {
   color: #646d13;
+  text-decoration: underline;
 }
 
+em {
+  font-weight: bold;
+}
 
 li a {
   color: #503945;
@@ -135,13 +147,16 @@ li a:hover {
   list-style-type: none;
  background-color: #ece9ea;
  
-}
+} 
+
+
+
 
 @media only screen and (max-width: 750px) {
  
 .fontFellEnglish {
   font-family: 'IM Fell English SC', serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #503945;
 
 } 
@@ -154,7 +169,7 @@ li a:hover {
 
 .fontAlegreya {
   font-family: 'Alegreya', serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #503945;
 }
 
@@ -168,8 +183,13 @@ li a:hover {
   display: flex;
   flex-direction: column; 
   justify-content: space-around;
-  border: 2px solid #503945;
   
+  
+}
+
+.text-container {
+  margin: 1rem 1.5rem;
+  padding: 1rem 1.5rem;
 }
 
 .underline {
@@ -194,6 +214,16 @@ li {
   margin-left: 20%;
   font-size: 1rem;
 }
+
+
+.paragraph {
+  color: #503945;
+  font-family: 'Alegreya', serif;
+  text-align: left;
+  font-size: 1.25rem;
+
+} 
+
 }
 
 @media only screen and (max-width: 400px) {

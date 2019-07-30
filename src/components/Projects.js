@@ -15,15 +15,18 @@ function App() {
         <h1 className="heading">Projects</h1>
         <div className="text-container">
           <div className="project-container">
+            <div>
             <Icon name="code" size="large" />
             <Icon name="globe" size="large" />
-          </div>
+            </div>
+  
             <div>
             <p className="paragraph">
             <span className="fontFellEnglish2">Recruiter Rules</span> is a rule engine for recruiters that I made with a team of 2 other developers as a part of Lambda School's 5-week capstone experience (Labs). In the app, a user can log in, create a set of rules or conditions under which a candidate's information can be sent to the contacts of their choice. Then, that user can input a candidate's information and it will automatically be emailed to the correct person according to that person's own rules as specified in their rule engine. 
             </p>
             <p className="paragraph"> We used React and Semantic UI on the frontend, Node and Express on the backend, Postgres for our database, and Firebase OAuth for our authentication. We also implemented nodemailer and json-rules-engine. In addition to collaborating across the stack, my main contribution was in getting our email system to work and to render the candidate's data in a human-readable, paragraph form.
             </p>
+            </div>
             </div>
         </div>
         <div className="text-container">

@@ -9,7 +9,7 @@ import SocialMenu from './components/SocialMenu';
 
 const App = () => {
   return (
-    <div>
+    <div id="app">
       <Menu />
       <Route exact path="/" component={() => <Home />} /> 
       <Route exact path="/about" component={() => <About />} />

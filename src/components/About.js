@@ -2,15 +2,20 @@ import React from 'react';
 import Menu from './Menu.js';
 import SocialMenu from './SocialMenu';
 import {Grid, Rail, GridColumn} from 'semantic-ui-react';
+import quill1 from '../svg/quill1.svg';
+import ink1 from '../svg/ink1.svg';
 
 function App() {
     return (
-      <div id="app">
+      <div>
     <Grid>
         <Grid.Column>
+          <div className="splatter2">
+            <img src={ink1} alt="inksplat" />
+          </div>
         <div className="fontAlegreya2 text-container">
             <div>
-            <img src="https://avatars3.githubusercontent.com/u/38929577?s=460&v=4" alt="Megan Jones" className="avatar" />
+            <img src="https://avatars3.githubusercontent.com/u/38929577?s=460&v=4" alt="Megan Jones" className="avatar-me" />
             </div>
             <h1 className="heading">My Story</h1>
             <p>

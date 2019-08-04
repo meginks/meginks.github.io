@@ -11,9 +11,57 @@
     height: 100%;
    background-color: #ece9ea;
   }
+
+  .home {
+    height: 100%;
+  }
+    
+  .heading {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 2.5rem;
+    color: var(--text-color);
+  }
+  
+  .text-container {
+    margin: 2rem 1rem;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } 
+  
+  .text-container p {
+    margin-bottom: 1rem;
+  }
+  .quill {
+    max-width: 100px;
+    max-height: 100px;
+    padding: .5rem;
+    margin: .5rem;
+  }
   
   .splatter {
     display:none;
+  }
+
+  .splatter2 {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    z-index: 800;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1.0s;
+    animation-duration: 1.0s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
   }
   
   .splatter3 {
@@ -49,6 +97,8 @@
   
     Link {
       margin: 1rem;
+      padding: 1rem;
+      color: #2f9c48;
     }
   
     li a {
@@ -57,7 +107,7 @@
  
     
     li:hover {
-      color: #646d13;
+      color:#2f9c48;
       text-decoration: underline;
     }
     
@@ -66,7 +116,7 @@
     }
     
     li a:hover {
-      color: #646d13
+      color: #2f9c48
     }
   
     a {
@@ -74,7 +124,7 @@
     }
     
     a:hover {
-      color: #646d13;
+      color: #2f9c48;
       text-decoration: underline;
     }
     
@@ -125,7 +175,8 @@
        justify-content: center;
        font-family: 'IM Fell English SC', serif;
        font-size: 1.5rem;
-       padding: 1rem;
+       padding: .5rem;
+       background-color: #ece9ea;
         
     } 
   
@@ -139,14 +190,24 @@
      background-color: #ece9ea;
     } 
   
-    .avatar {
+    .avatar-me {
       border-radius: 50%;
       border: 1px solid var(--text-color);
       text-align: center;
       margin: .5rem; 
       max-width: 200px;
-      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-      filter: grayscale(100%);
+      -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(60%);
+    }
+
+    .avatar {
+      border-radius: 20%;
+      border: 3px solid var(--text-color);
+      text-align: center;
+      margin: .5rem; 
+      max-width: 200px;
+      -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(60%);
     }
     
   
@@ -194,10 +255,6 @@
       color: #503945;
     }
     
-    .fontGaramond {
-      font-family: 'EB Garamond', serif;
-    }
-    
     .menu {
       font-family: 'IM Fell English SC', serif;
       font-size: 2rem;
@@ -208,10 +265,6 @@
       
     }
     
-    .text-container {
-      margin: 1rem 1.5rem;
-      padding: 1rem 1.5rem;
-    }
     
     
     .definition {
@@ -337,12 +390,7 @@
     top: 80%;
     left: 50%;
   }
-  
-  .heading {
-    font-family: 'IM Fell English SC', serif;
-    font-size: 3rem;
-    color: var(--text-color);
-  }
+
   
   .paragraph {
     color: var(--text-color);
@@ -371,15 +419,6 @@
    width: 90%;
    margin: 2%;
   }
-  
-  .text-container {
-    margin: 2rem 3rem;
-    padding: 2rem 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  } 
   
   
   

@@ -1,12 +1,14 @@
 import React from 'react';
 import Menu from './Menu';
 import {Icon} from 'semantic-ui-react';
+import ink6 from '../svg/ink6.svg';
 import SocialMenu from './SocialMenu';
 
 
 function App() {
     return (
       <div id="app">
+          <img src={ink6} alt="ink" className="splatter2" />
         <div className="text-container">
         <div>
        <Icon name="code branch" size="huge" className="fontFellEnglish" />
@@ -14,6 +16,7 @@ function App() {
         <h1 className="heading">Projects</h1>
         <div >     
             <div className="text-container">
+              <img src="https://images.unsplash.com/photo-1560574188-6a6774965120?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="engine" className="avatar" />
             <p className="paragraph">
             <span className="fontFellEnglish2">Recruiter Rules</span> is a rule engine for recruiters that I made with a team of 2 other developers as a part of Lambda School's 5-week capstone experience (Labs). In the app, a user can log in, create a set of rules or conditions under which a candidate's information can be sent to the contacts of their choice. Then, that user can input a candidate's information and it will automatically be emailed to the correct person according to that person's own rules as specified in their rule engine. 
             </p>
@@ -27,6 +30,7 @@ function App() {
         
         </div>
         <div className="text-container">
+            <img src="https://images.unsplash.com/photo-1503596476-1c12a8ba09a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" alt="trash" className="avatar" />
             <p className="paragraph">
             <span className="fontFellEnglish2">Black Hole</span> is a note taking app that I created in the span of one week with a team of 3 other students at Lambda School. I created the backend of the application using Node and Express.
             </p>
@@ -35,7 +39,7 @@ function App() {
             </p>
         </div>
         <div className="text-container">
-           
+           <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=1050&q=80" alt="grading" className="avatar" />
             <p className="paragraph">
             <span className="fontFellEnglish2">Life GPA</span> is an task management app that I created in the span of one week with a team of 4 other students at Lambda School. I created the frontend portion using React and CSS. 
             </p>
@@ -44,7 +48,7 @@ function App() {
             </p>
         </div>
         <div className="text-container">
-        
+            <img src="https://images.unsplash.com/photo-1549354324-290af3126793?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="students" className="avatar" />
             <p className="paragraph">
             <span className="fontFellEnglish2">International Rural School Report</span> is a resource management application for rural schools that I created in the span of one week with a team of 5 other students at Lambda School. I created the marketing page for the app using HTML, CSS (Less) and vanilla Javascript. I also wrote all of the copy.
             </p>

@@ -1,24 +1,15 @@
 import React from 'react';
-import Menu from './Menu.js';
 import {Rail, Grid} from 'semantic-ui-react';
-import SocialMenu from './SocialMenu'
-import ink1 from '../svg/ink1.svg';
-import ink2 from '../svg/ink2.svg';
-import ink3 from  '../svg/ink3.svg';
-import ink4 from '../svg/ink4.svg';
-import ink5 from '../svg/ink5.svg';
 import ink6 from '../svg/ink6.svg';
 import ink7 from '../svg/ink7.svg';
-import quill1 from '../svg/quill1.svg';
 
 function App() {
     return (
-      <div id="app">
+      <div className="home">
           <Grid>
         <Grid.Column>
        <img src={ink6} alt="ink" className="splatter3" />
         <div className="definition">
-      
         <div> <h1 className="fontFellEnglish name" >Megan Jones </h1></div>
         
         <div className="offset-def">

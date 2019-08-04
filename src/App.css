@@ -10,10 +10,12 @@
   html, #app, body, #app>div {
     height: 100%;
    background-color: #ece9ea;
+   width: 100%;
   }
 
   .home {
     height: 100%;
+    width: 100%;
   }
 
   .ui .divider {
@@ -68,8 +70,8 @@
     top: 10%;
     left: 70%;
     z-index: 800;
-    height: 250px;
-    width: 250px;
+    height: 100px;
+    width: 100px;
     text-align: center;
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
@@ -81,6 +83,7 @@
     animation-delay: 2s;
   }
  
+  
   .splatter3 {
     display: block;
     position: absolute;
@@ -106,7 +109,7 @@
     
     .fontFellEnglish {
       font-family: 'IM Fell English SC', serif;
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: var(--text-color);
     
     } 
@@ -114,7 +117,7 @@
   
   .fontFellEnglish2 {
     font-family: 'IM Fell English SC', serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--text-color);
   }
   
@@ -161,6 +164,7 @@
     em {
       font-weight: bold;
     }
+
 
 
    
@@ -211,9 +215,6 @@
       
     }
   
-   
-    
-  
     .avatar-me {
       border-radius: 50%;
       border: 1px solid var(--text-color);
@@ -254,7 +255,7 @@
     
   
   
-    /** TABLET STYLES ***/ 
+    * TABLET STYLES ** 
     @media only screen and (min-width: 400px) {
    
       .splatter3 {
@@ -276,6 +277,26 @@
         animation-delay: 2s;
       }
     
+
+      .splatter2 {
+        display: block;
+        position: absolute;
+        top: 10%;
+        left: 70%;
+        z-index: 800;
+        height: 250px;
+        width: 250px;
+        text-align: center;
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+        -webkit-animation-duration: 1.0s;
+        animation-duration: 1.0s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-delay: 2s;
+        animation-delay: 2s;
+      }
+     
     
     
       .fontFellEnglish {
@@ -448,6 +469,26 @@
   .offset-def {
     margin-left: 25%;
   } 
+ 
+
+  .splatter2 {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    z-index: 800;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1.0s;
+    animation-duration: 1.0s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+  }
  
 
  

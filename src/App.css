@@ -51,6 +51,7 @@
   } 
   
   .text-container p {
+    font-size: 1.5rem;
     margin-bottom: 1rem;
   }
   .quill {
@@ -314,7 +315,7 @@
     
     .fontAlegreya {
       font-family: 'Alegreya', serif;
-      font-size: 2rem;
+      font-size: 2.5rem;
       color: #503945;
     }
     

@@ -76,15 +76,15 @@
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
   }
-  
+ 
   .splatter3 {
     display: block;
     position: absolute;
-    top: 10%;
+    top: 65%;
     left: 10%;
-    z-index: 800;
-    height: 300px;
-    width: 300px;
+    z-index: 700;
+    height: 200px;
+    width: 250px;
     text-align: center;
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
@@ -95,7 +95,6 @@
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
   }
-  
   
   .ink {
     display:none;
@@ -351,14 +350,16 @@
     animation-delay: 1s;
   }
   
+
+
   .splatter3 {
     display: block;
     position: absolute;
-    top: 5%;
-    left: 1%;
-    z-index: 700;
-    height: 500px;
-    width: 450px;
+    top: 10%;
+    left: 10%;
+    z-index: 800;
+    height: 300px;
+    width: 300px;
     text-align: center;
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;

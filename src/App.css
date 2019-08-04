@@ -15,6 +15,18 @@
   .home {
     height: 100%;
   }
+
+  .menu {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 1rem;
+    
+  }
+  
     
   .heading {
     font-family: 'IM Fell English SC', serif;
@@ -180,15 +192,7 @@
         
     } 
   
-    .menu {
-      font-family: 'IM Fell English SC', serif;
-      font-size: 2rem;
-      display: block;
-      margin: 1rem;
-      padding: 2rem;
-      list-style-type: none;
-     background-color: #ece9ea;
-    } 
+    
   
     .avatar-me {
       border-radius: 50%;
@@ -200,14 +204,16 @@
       filter: grayscale(60%);
     }
 
-    .avatar {
-      border-radius: 20%;
-      border: 3px solid var(--text-color);
-      text-align: center;
-      margin: .5rem; 
-      max-width: 200px;
+    .ui .image {
+      border-radius: 3%;
       -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
-      filter: grayscale(60%);
+      filter: grayscale(60%); 
+    }
+
+    .project-group {
+      width: 80%;
+      margin: 1rem;
+      padding: 1rem;
     }
     
   
@@ -255,16 +261,7 @@
       color: #503945;
     }
     
-    .menu {
-      font-family: 'IM Fell English SC', serif;
-      font-size: 2rem;
-      display: flex;
-      flex-direction: column; 
-      justify-content: space-around;
-      
-      
-    }
-    
+   
     
     
     .definition {
@@ -295,7 +292,7 @@
     /** DESKTOP STYLES ***/
   
     @media only screen and (min-width: 700px) {
-        
+  
   .ink {
     display: block;
     width: 50px;
@@ -415,7 +412,7 @@
   
   .divider {
    background-color: #503945;
-   height: 1px; 
+   height: .5px; 
    width: 90%;
    margin: 2%;
   }

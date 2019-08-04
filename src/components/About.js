@@ -1,7 +1,7 @@
 import React from 'react';
 import Menu from './Menu.js';
 import SocialMenu from './SocialMenu';
-import {Grid, Rail, GridColumn} from 'semantic-ui-react';
+import {Grid, Segment} from 'semantic-ui-react';
 import quill1 from '../svg/quill1.svg';
 import ink1 from '../svg/ink1.svg';
 

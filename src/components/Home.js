@@ -16,9 +16,6 @@ function App() {
       <div id="app">
           <Grid>
         <Grid.Column>
-        <Rail position="left">
-       <Menu />
-       </Rail>
        <img src={ink6} alt="ink" className="splatter3" />
         <div className="definition">
       
@@ -31,12 +28,6 @@ function App() {
         <img src={ink7} alt="ink spot" className="splatter"/>
         </Grid.Column>
         </Grid>
-        <footer className="footer">
-          <p>
-          Megan Jones &copy; 2019 
-          </p> 
-          <img src={ink5} alt="ink" className="ink" />
-          </footer>
       </div>
     );
   }

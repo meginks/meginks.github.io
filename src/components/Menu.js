@@ -15,11 +15,11 @@ render() {
     return (
         <>
         {/* <Icon name="bars" size="big" className="menu" onCLick={this.openMenu}/> */}
-        <ul className="menu hidden">
-        <li><Link to="/">home </Link></li>
-        <li><Link to="/about">about</Link></li>
-        <li><Link to="/projects">projects</Link></li>
-        </ul>
+        <div className="menu">
+        <Link to="/">home</Link>
+        <Link to="/about">about</Link>
+        <Link to="/projects">projects</Link>
+        </div>
         </>
     )
     }

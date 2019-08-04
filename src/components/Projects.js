@@ -7,7 +7,6 @@ import SocialMenu from './SocialMenu';
 function App() {
     return (
       <div id="app">
-      <Menu />
         <div className="text-container">
         <div>
        <Icon name="code branch" size="huge" className="fontFellEnglish" />
@@ -54,7 +53,6 @@ function App() {
             </p>
         </div>
         </div>
-        <SocialMenu />
       </div>
     );
   }

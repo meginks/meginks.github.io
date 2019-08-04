@@ -1,88 +1,399 @@
 
   /** VARIABLES **/ 
-:root {
-  --text-color: #503945;
-}
-
-
-  /** MOBILE STYLES ***/ 
-
-html, #app, body, #app>div {
-  height: 100%;
- background-color: #ece9ea;
-}
-
-.splatter {
-  display:none;
-}
-
-.splatter3 {
-  display: block;
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  z-index: 800;
-  height: 300px;
-  width: 300px;
-  text-align: center;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animation-duration: 1.0s;
-  animation-duration: 1.0s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-}
-
-
-.ink {
-  display:none;
-}
+  :root {
+    --text-color: #503945;
+  }
+  
+  
+    /** MOBILE STYLES ***/ 
+  
+  html, #app, body, #app>div {
+    height: 100%;
+   background-color: #ece9ea;
+  }
+  
+  .splatter {
+    display:none;
+  }
+  
+  .splatter3 {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 800;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1.0s;
+    animation-duration: 1.0s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+  }
+  
+  
+  .ink {
+    display:none;
+  }
+    
+    .fontFellEnglish {
+      font-family: 'IM Fell English SC', serif;
+      font-size: 2.5rem;
+      color: #503945;
+    
+    } 
+  
+    Link {
+      margin: 1rem;
+    }
+  
+    li a {
+      color: var(--text-color);
+    }
+ 
+    
+    li:hover {
+      color: #646d13;
+      text-decoration: underline;
+    }
+    
+    li a {
+      color:var(--text-color);
+    }
+    
+    li a:hover {
+      color: #646d13
+    }
+  
+    a {
+      color: var(--text-color);
+    }
+    
+    a:hover {
+      color: #646d13;
+      text-decoration: underline;
+    }
+    
+    em {
+      font-weight: bold;
+    }
+  
+    .fontFellEnglish .name {
+      display: block; 
+      overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+    
+    .fontAlegreya {
+      font-family: 'Alegreya', serif;
+      font-size: 2rem;
+      color: #503945;
+    }
+    
+    .fontGaramond {
+      font-family: 'EB Garamond', serif;
+    }
+    
+    .definition {
+      top: 25%;
+      left: 25%;
+      font-size: 1rem;
+      padding: .5rem;
+      margin: .5rem;
+    }
+    
+    .offset-def {
+      font-size: 1rem;
+    }
+  
+    .definition {
+      display: block;
+      
+    }
+  
+    .footer {
+      position: fixed;
+       bottom:0;
+       width:100%;
+       display: flex;
+       align-items: bottom;
+       justify-content: center;
+       font-family: 'IM Fell English SC', serif;
+       font-size: 1.5rem;
+       padding: 1rem;
+        
+    } 
+  
+    .menu {
+      font-family: 'IM Fell English SC', serif;
+      font-size: 2rem;
+      display: block;
+      margin: 1rem;
+      padding: 2rem;
+      list-style-type: none;
+     background-color: #ece9ea;
+    } 
+  
+    .avatar {
+      border-radius: 50%;
+      border: 1px solid var(--text-color);
+      text-align: center;
+      margin: .5rem; 
+      max-width: 200px;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+    }
+    
+  
+  
+    /** TABLET STYLES ***/ 
+    @media only screen and (min-width: 400px) {
+   
+      .splatter3 {
+        display: block;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        z-index: 800;
+        height: 300px;
+        width: 300px;
+        text-align: center;
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+        -webkit-animation-duration: 1.0s;
+        animation-duration: 1.0s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-delay: 2s;
+        animation-delay: 2s;
+      }
+    
+    
+    
+      .fontFellEnglish {
+      font-family: 'IM Fell English SC', serif;
+      font-size: 2.5rem;
+      color: #503945;
+    
+    } 
+    
+    .fontFellEnglish2 {
+      font-family: 'IM Fell English SC', serif;
+      font-size: 1.5rem;
+      color: #503945;
+    }
+    
+    .fontAlegreya {
+      font-family: 'Alegreya', serif;
+      font-size: 1rem;
+      color: #503945;
+    }
+    
+    .fontGaramond {
+      font-family: 'EB Garamond', serif;
+    }
+    
+    .menu {
+      font-family: 'IM Fell English SC', serif;
+      font-size: 2rem;
+      display: flex;
+      flex-direction: column; 
+      justify-content: space-around;
+      
+      
+    }
+    
+    .text-container {
+      margin: 1rem 1.5rem;
+      padding: 1rem 1.5rem;
+    }
+    
+    
+    .definition {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      font-size: 2rem;
+      padding: .5rem;
+      margin: .5rem;
+    }
+    
+    .offset-def {
+      margin-left: 20%;
+      font-size: 1rem;
+    }
+    
+    
+    .paragraph {
+      color: #503945;
+      font-family: 'Alegreya', serif;
+      text-align: left;
+      font-size: 1.25rem;
+    
+    } 
+    
+    }
+    
+    /** DESKTOP STYLES ***/
+  
+    @media only screen and (min-width: 700px) {
+        
+  .ink {
+    display: block;
+    width: 50px;
+    height: 50px;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1.0s;
+    animation-duration: 1.0s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+  }
+  
+  .splatter {
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 70%;
+    width: 500px;
+    height: 500px;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1.0s;
+    animation-duration: 1.0s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+  
+  .splatter3 {
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    z-index: 700;
+    height: 500px;
+    width: 450px;
+    text-align: center;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1.0s;
+    animation-duration: 1.0s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  @-webkit-keyframes zoomOut {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(.3, .3, .3);
+              transform: scale3d(.3, .3, .3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomOut {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(.3, .3, .3);
+              transform: scale3d(.3, .3, .3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  .zoomIn {
+    -webkit-animation-name: zoomIn;
+            animation-name: zoomIn;
+  }
+  
+  
+  .fixed-bottom {
+    position: fixed;
+    top: 80%;
+    left: 50%;
+  }
+  
+  .heading {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 3rem;
+    color: var(--text-color);
+  }
+  
+  .paragraph {
+    color: var(--text-color);
+    font-family: 'Alegreya', serif;
+    text-align: left;
+    font-size: 1.5rem;
+  
+  }
+  
+  .project-icon {
+    
+    padding: 2rem;
+  
+  }
+  
+  .container {
+    height: 100%;
+    max-width: 100%;
+  } 
+  
+  
+  
+  .divider {
+   background-color: #503945;
+   height: 1px; 
+   width: 90%;
+   margin: 2%;
+  }
+  
+  .text-container {
+    margin: 2rem 3rem;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } 
+  
+  
   
   .fontFellEnglish {
     font-family: 'IM Fell English SC', serif;
-    font-size: 2.5rem;
-    color: #503945;
-  
-  } 
-
-  li a {
+    font-size: 3rem;
     color: var(--text-color);
-    margin: 1rem;
+  
   }
   
-  li:hover {
-    color: #646d13;
-    text-decoration: underline;
-  }
-  
-  li a {
-    color:var(--text-color);
-  }
-  
-  li a:hover {
-    color: #646d13
-  }
-
-  a {
+  .fontFellEnglish2 {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 2rem;
     color: var(--text-color);
-  }
-  
-  a:hover {
-    color: #646d13;
-    text-decoration: underline;
-  }
-  
-  em {
-    font-weight: bold;
-  }
-  
-  .fontFellEnglish .name {
-    display: block; 
-    overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   }
   
   .fontAlegreya {
@@ -91,354 +402,31 @@ html, #app, body, #app>div {
     color: #503945;
   }
   
-  .fontGaramond {
-    font-family: 'EB Garamond', serif;
-  }
-  
-  .definition {
-    top: 25%;
-    left: 25%;
-    font-size: 1rem;
-    padding: .5rem;
-    margin: .5rem;
-  }
-  
-  .offset-def {
-    font-size: 1rem;
-  }
-
-
-  footer {
-    position:absolute;
-     bottom:0;
-     width:100%;
-     display: flex;
-     align-items: center;
-     justify-content: center; 
-     flex-wrap: nowrap;
-      
-  } 
-
-
-  /** TABLET STYLES ***/ 
-  @media only screen and (min-width: 400px) {
- 
-    .splatter3 {
-      display: block;
-      position: absolute;
-      top: 10%;
-      left: 10%;
-      z-index: 800;
-      height: 300px;
-      width: 300px;
-      text-align: center;
-      -webkit-animation-name: fadeIn;
-      animation-name: fadeIn;
-      -webkit-animation-duration: 1.0s;
-      animation-duration: 1.0s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-      -webkit-animation-delay: 2s;
-      animation-delay: 2s;
-    }
-  
-  
-  
-    .fontFellEnglish {
-    font-family: 'IM Fell English SC', serif;
-    font-size: 2.5rem;
-    color: #503945;
-  
-  } 
-  
-  .fontFellEnglish2 {
-    font-family: 'IM Fell English SC', serif;
+  .fontAlegreya2 {
+    font-family: 'Alegreya', serif;
     font-size: 1.5rem;
     color: #503945;
   }
   
-  .fontAlegreya {
-    font-family: 'Alegreya', serif;
-    font-size: 1rem;
-    color: #503945;
-  }
-  
   .fontGaramond {
     font-family: 'EB Garamond', serif;
   }
   
-  .menu {
-    font-family: 'IM Fell English SC', serif;
-    font-size: 2rem;
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-around;
-    
-    
-  }
-  
-  .text-container {
-    margin: 1rem 1.5rem;
-    padding: 1rem 1.5rem;
-  }
-  
-  .underline {
-    text-decoration: underline;
-  }
-  
-  
-  li {
-    margin: .25rem;
-  }
-  
   .definition {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    font-size: 2rem;
+    top: 40%;
+    left: 40%;
     padding: .5rem;
     margin: .5rem;
   }
   
   .offset-def {
-    margin-left: 20%;
-    font-size: 1rem;
-  }
-  
-  
-  .paragraph {
-    color: #503945;
-    font-family: 'Alegreya', serif;
-    text-align: left;
-    font-size: 1.25rem;
-  
+    margin-left: 25%;
+    font-size: 2rem;
   } 
   
-  }
+  .name {
+    display: block;
+  } 
   
-  /** DESKTOP STYLES ***/
-
-  @media only screen and (min-width: 700px) {
-      
-.ink {
-  display: block;
-  width: 50px;
-  height: 50px;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animation-duration: 1.0s;
-  animation-duration: 1.0s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-delay: .5s;
-  animation-delay: .5s;
-}
-
-.splatter {
-  display: block;
-  position: absolute;
-  top: 5%;
-  left: 70%;
-  width: 500px;
-  height: 500px;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animation-duration: 1.0s;
-  animation-duration: 1.0s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-
-.splatter3 {
-  display: block;
-  position: absolute;
-  top: 5%;
-  left: 1%;
-  z-index: 800;
-  height: 500px;
-  width: 450px;
-  text-align: center;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animation-duration: 1.0s;
-  animation-duration: 1.0s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-@-webkit-keyframes zoomOut {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(.3, .3, .3);
-            transform: scale3d(.3, .3, .3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes zoomOut {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(.3, .3, .3);
-            transform: scale3d(.3, .3, .3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-.zoomIn {
-  -webkit-animation-name: zoomIn;
-          animation-name: zoomIn;
-}
-
-
-
-footer p {
-  text-align: center;
-  padding: 2%;
-  font-family: 'IM Fell English SC', serif;
-}
-
-.footer-container {
-  display: block
-}
-
-.fixed-bottom {
-  position: fixed;
-  top: 80%;
-  left: 50%;
-}
-
-.heading {
-  font-family: 'IM Fell English SC', serif;
-  font-size: 3rem;
-  color: var(--text-color);
-}
-
-.paragraph {
-  color: var(--text-color);
-  font-family: 'Alegreya', serif;
-  text-align: left;
-  font-size: 1.5rem;
-
-}
-
-.project-icon {
-  
-  padding: 2rem;
-
-}
-
-.container {
-  height: 100%;
-  max-width: 100%;
-} 
-
-
-
-.divider {
- background-color: #503945;
- height: 1px; 
- width: 90%;
- margin: 2%;
-}
-
-.text-container {
-  margin: 2rem 3rem;
-  padding: 2rem 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-} 
-
-.avatar {
-  border-radius: 50%;
-  border: 1px solid var(--text-color);
-  text-align: center;
-  margin: .5rem; 
-  max-width: 200px;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-}
-
-
-
-
-
-.fontFellEnglish {
-  font-family: 'IM Fell English SC', serif;
-  font-size: 3rem;
-  color: var(--text-color);
-
-}
-
-.fontFellEnglish2 {
-  font-family: 'IM Fell English SC', serif;
-  font-size: 2rem;
-  color: var(--text-color);
-}
-
-.fontAlegreya {
-  font-family: 'Alegreya', serif;
-  font-size: 2rem;
-  color: #503945;
-}
-
-.fontAlegreya2 {
-  font-family: 'Alegreya', serif;
-  font-size: 1.5rem;
-  color: #503945;
-}
-
-.fontGaramond {
-  font-family: 'EB Garamond', serif;
-}
-
-.definition {
-  position: fixed;
-  top: 40%;
-  left: 40%;
-  padding: .5rem;
-  margin: .5rem;
-}
-
-.offset-def {
-  margin-left: 25%;
-  font-size: 2rem;
-} 
-
-.name {
-  display: block;
-} 
-
-.menu {
-  font-family: 'IM Fell English SC', serif;
-  font-size: 2rem;
-  display: flex; 
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  list-style-type: none;
- background-color: #ece9ea;
- 
-} 
-
-  }
+    }

@@ -35,6 +35,7 @@
   }
   
   .text-container {
+    font-family: 'Alegreya', serif;
     margin: 2rem 1rem;
     padding: 1rem 1rem;
     display: flex;
@@ -103,9 +104,25 @@
     .fontFellEnglish {
       font-family: 'IM Fell English SC', serif;
       font-size: 2.5rem;
-      color: #503945;
+      color: var(--text-color);
     
     } 
+
+    
+  
+  
+  .fontFellEnglish2 {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 2rem;
+    color: var(--text-color);
+  }
+  
+  .fontAlegreya {
+    font-family: 'Alegreya', serif;
+    font-size: 2rem;
+    color: #503945;
+  }
+  
   
     Link {
       margin: 1rem;
@@ -150,6 +167,13 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     }
+
+    .fontAlegreya2 {
+      font-family: 'Alegreya', serif;
+      font-size: 1.5rem;
+      color: #503945;
+    }
+    
     
     .fontAlegreya {
       font-family: 'Alegreya', serif;
@@ -178,20 +202,7 @@
       
     }
   
-    .footer {
-      position: fixed;
-       bottom:0;
-       width:100%;
-       display: flex;
-       align-items: bottom;
-       justify-content: center;
-       font-family: 'IM Fell English SC', serif;
-       font-size: 1.5rem;
-       padding: .5rem;
-       background-color: #ece9ea;
-        
-    } 
-  
+   
     
   
     .avatar-me {
@@ -215,6 +226,22 @@
       margin: 1rem;
       padding: 1rem;
     }
+
+
+    .footer {
+      position: fixed;
+       bottom:0;
+       width:100%;
+       display: flex;
+       align-items: bottom;
+       justify-content: center;
+       font-family: 'IM Fell English SC', serif;
+       font-size: 1rem;
+       padding: .5rem;
+       background-color: #ece9ea;
+        
+    } 
+  
     
   
   
@@ -388,14 +415,7 @@
     left: 50%;
   }
 
-  
-  .paragraph {
-    color: var(--text-color);
-    font-family: 'Alegreya', serif;
-    text-align: left;
-    font-size: 1.5rem;
-  
-  }
+
   
   .project-icon {
     
@@ -417,36 +437,13 @@
    margin: 2%;
   }
   
-  
-  
   .fontFellEnglish {
-    font-family: 'IM Fell English SC', serif;
     font-size: 3rem;
-    color: var(--text-color);
-  
+
   }
   
-  .fontFellEnglish2 {
-    font-family: 'IM Fell English SC', serif;
-    font-size: 2rem;
-    color: var(--text-color);
-  }
-  
-  .fontAlegreya {
-    font-family: 'Alegreya', serif;
-    font-size: 2rem;
-    color: #503945;
-  }
-  
-  .fontAlegreya2 {
-    font-family: 'Alegreya', serif;
-    font-size: 1.5rem;
-    color: #503945;
-  }
-  
-  .fontGaramond {
-    font-family: 'EB Garamond', serif;
-  }
+
+ 
   
   .definition {
     position: fixed;
@@ -464,5 +461,20 @@
   .name {
     display: block;
   } 
+
+  .footer {
+    position: fixed;
+     bottom:0;
+     width:100%;
+     display: flex;
+     align-items: bottom;
+     justify-content: center;
+     font-family: 'IM Fell English SC', serif;
+     font-size: 1.5rem;
+     padding: .5rem;
+     background-color: #ece9ea;
+      
+  } 
+
   
     }

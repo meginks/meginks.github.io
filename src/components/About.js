@@ -11,7 +11,7 @@ function App() {
         <Rail>
         <Menu />
         </Rail>
-        <div className="fontAlegreya text-container">
+        <div className="fontAlegreya2 text-container">
             <div>
             <img src="https://avatars3.githubusercontent.com/u/38929577?s=460&v=4" alt="Megan Jones" className="avatar" />
             </div>

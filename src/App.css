@@ -1,33 +1,48 @@
+:root {
+  --text-color: #503945;
+}
+
 html, #app, body, #app>div {
   height: 100%;
  background-color: #ece9ea;
 }
 
-.inksplat {
-  color: #503945;
-}
-
-
-.splat {
-  /* display:none; */
-  color: #503945; 
-  position: absolute;
-  top: 100px;
-  left: 100px;
-  z-index: 800;
-  height: 320px;
-  width: 320px;
-  -webkit-animation-name: zoomOut;
-  animation-name: zoomOut;
-  -webkit-animation-duration: .20s;
-  animation-duration: .30s;
+.ink {
+  width: 50px;
+  height: 50px;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1.0s;
+  animation-duration: 1.0s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
 }
-.content {
+
+.splatter {
+  position: absolute;
+  top: 5%;
+  left: 70%;
+  width: 500px;
+  height: 500px;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1.0s;
+  animation-duration: 1.0s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.splatter3 {
   position: relative;
-  top: 50px;
-  width: 100%;
+  top: 5%;
+  left: 1%;
+  z-index: 800;
+  height: 500px;
+  width: 450px;
   text-align: center;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
@@ -35,24 +50,9 @@ html, #app, body, #app>div {
   animation-duration: 1.0s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.5s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
 }
-.splatter {
-  position: absolute;
-  top: 90px;
-  left: 50px;
-  z-index: 499;
-  -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; 
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s; 
-}
-
 
 @-webkit-keyframes fadeIn {
   0% {opacity: 0;}
@@ -96,13 +96,17 @@ footer {
   position:absolute;
    bottom:0;
    width:100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
     
 } 
 
 footer p {
   text-align: center;
   padding: 2%;
-  font-family: 'Alegreya', serif;
+  font-family: 'IM Fell English SC', serif;
+  display: block;
 }
 
 
@@ -114,12 +118,12 @@ footer p {
 
 .heading {
   font-family: 'IM Fell English SC', serif;
-  font-size: 2rem;
-  color: #503945;
+  font-size: 3rem;
+  color: var(--text-color);
 }
 
 .paragraph {
-  color: #503945;
+  color: var(--text-color);
   font-family: 'Alegreya', serif;
   text-align: left;
   font-size: 1.5rem;
@@ -131,8 +135,6 @@ footer p {
   padding: 2rem;
 
 }
-
-
 
 .circle {
   border: 3px solid #503945;
@@ -167,7 +169,7 @@ footer p {
 
 .avatar {
   border-radius: 50%;
-  border: 1px solid  #503945;
+  border: 1px solid var(--text-color);
   text-align: center;
   margin: .5rem; 
   max-width: 200px;
@@ -177,7 +179,7 @@ footer p {
 
 
 a {
-  color: #503945;
+  color: var(--text-color);
 }
 
 a:hover {
@@ -190,11 +192,11 @@ em {
 }
 
 li a {
-  color: #503945;
-  margin: 2rem;
+  color: var(--text-color);
+  margin: 1rem;
 }
 
-li a:hover {
+li:hover {
   color: #646d13;
   text-decoration: underline;
 }
@@ -202,17 +204,23 @@ li a:hover {
 .fontFellEnglish {
   font-family: 'IM Fell English SC', serif;
   font-size: 3rem;
-  color: #503945;
+  color: var(--text-color);
 
 }
 
 .fontFellEnglish2 {
   font-family: 'IM Fell English SC', serif;
   font-size: 2rem;
-  color: #503945;
+  color: var(--text-color);
 }
 
 .fontAlegreya {
+  font-family: 'Alegreya', serif;
+  font-size: 2rem;
+  color: #503945;
+}
+
+.fontAlegreya2 {
   font-family: 'Alegreya', serif;
   font-size: 1.5rem;
   color: #503945;
@@ -224,16 +232,15 @@ li a:hover {
 
 .definition {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  font-size: 2rem;
+  top: 40%;
+  left: 40%;
   padding: .5rem;
   margin: .5rem;
 }
 
 .offset-def {
-  margin-left: 20%;
-  font-size: 1rem;
+  margin-left: 25%;
+  font-size: 2rem;
 } 
 
 .name {
@@ -257,7 +264,27 @@ li a:hover {
 
 @media only screen and (max-width: 750px) {
  
-.fontFellEnglish {
+  .splatter3 {
+    position: relative;
+    top: 10%;
+    left: 10%;
+    z-index: 800;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1.0s;
+    animation-duration: 1.0s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+  }
+
+
+
+  .fontFellEnglish {
   font-family: 'IM Fell English SC', serif;
   font-size: 2.5rem;
   color: #503945;
@@ -308,7 +335,7 @@ li {
   position: fixed;
   top: 50%;
   left: 50%;
-  font-size: 1rem;
+  font-size: 2rem;
   padding: .5rem;
   margin: .5rem;
 }
@@ -355,7 +382,7 @@ li {
   
   .fontAlegreya {
     font-family: 'Alegreya', serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #503945;
   }
   

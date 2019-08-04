@@ -13,9 +13,7 @@ function App() {
        <Icon name="code branch" size="huge" className="fontFellEnglish" />
         </div>
         <h1 className="heading">Projects</h1>
-        <div >
-          
-               
+        <div >     
             <div className="text-container">
             <p className="paragraph">
             <span className="fontFellEnglish2">Recruiter Rules</span> is a rule engine for recruiters that I made with a team of 2 other developers as a part of Lambda School's 5-week capstone experience (Labs). In the app, a user can log in, create a set of rules or conditions under which a candidate's information can be sent to the contacts of their choice. Then, that user can input a candidate's information and it will automatically be emailed to the correct person according to that person's own rules as specified in their rule engine. 

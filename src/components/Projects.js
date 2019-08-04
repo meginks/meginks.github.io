@@ -1,6 +1,6 @@
 import React from 'react';
 import Menu from './Menu';
-import {Icon, Image, Card} from 'semantic-ui-react';
+import {Icon, Image, Card, Divider} from 'semantic-ui-react';
 import ink6 from '../svg/ink6.svg';
 import SocialMenu from './SocialMenu';
 
@@ -26,7 +26,7 @@ function App() {
             </p>
             <p className="paragraph"> We used React and Semantic UI on the frontend, Node and Express on the backend, Postgres for our database, and Firebase OAuth for our authentication. We also implemented nodemailer and json-rules-engine. In addition to collaborating across the stack, my main contribution was in getting our email system to work and to render the candidate's data in a human-readable, paragraph form. 
             </p>
-            <div className="divider"></div>
+            <Divider horizontal><Icon name="code" /></Divider>
             <p className="paragraph">
             For further reading and reference: See <em><a href="https://github.com/labs13-recruiter-rule" target="_blank">the code </a></em> and <em><a href="https://recruiterrules.com" target="_blank">the deployed site.</a></em>
             </p>
@@ -43,7 +43,7 @@ function App() {
                   <p className="paragraph">
             <span className="fontFellEnglish2">Black Hole</span> is a note taking app that I created in the span of one week with a team of 3 other students at Lambda School. I created the backend of the application using Node and Express.
             </p>
-            <div className="divider"></div>
+            <Divider horizontal><Icon name="code" /></Divider>
             <p className="paragraph">
             For further reading and reference: See <em><a target="_blank" href="https://github.com/april-blackhole-lambda/backend">the code. </a></em>
             </p>
@@ -60,7 +60,7 @@ function App() {
              <p className="paragraph">
             <span className="fontFellEnglish2">Life GPA</span> is an task management app that I created in the span of one week with a team of 4 other students at Lambda School. I created the frontend portion using React and CSS. 
             </p>
-            <div className="divider"></div>
+            <Divider horizontal><Icon name="code" /></Divider>
             <p className="paragraph">
             For further reading and reference: See <em><a href="https://github.com/lifegpa/life-gpa-react-app" target="_blank">the code </a></em> and <em><a href="http://lifegpabuildweek.netlify.com/" target="_blank">the deployed site.</a></em>
             </p>
@@ -76,11 +76,11 @@ function App() {
             <p className="paragraph">
             <span className="fontFellEnglish2">International Rural School Report</span> is a resource management application for rural schools that I created in the span of one week with a team of 5 other students at Lambda School. I created the marketing page for the app using HTML, CSS (Less) and vanilla Javascript. I also wrote all of the copy.
             </p>
-            <div className="divider"></div>
+            <Divider horizontal><Icon name="code" /></Divider>
             <p className="paragraph">
             For further reading and reference: See <em><a href="https://github.com/internation-rural-school-report/irsr-marketing-page-mj" target="_blank">the code </a></em> and <em><a href="https://silly-fermi-9306d2.netlify.com/" target="_blank">the deployed site.</a></em>
             </p>
-        </div>
+        </div> 
                   </Card.Description>
                 </Card.Content>
               </Card>

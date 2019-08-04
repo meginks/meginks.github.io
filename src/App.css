@@ -16,6 +16,10 @@
     height: 100%;
   }
 
+  .ui .divider {
+    color: var(--text-color);
+  }
+
   .menu {
     font-family: 'IM Fell English SC', serif;
     font-size: 2rem;
@@ -431,13 +435,7 @@
   
   
   
-  .divider {
-   background-color: #503945;
-   height: .5px; 
-   width: 90%;
-   margin: 2%;
-  }
-  
+
   .fontFellEnglish {
     font-size: 3rem;
 

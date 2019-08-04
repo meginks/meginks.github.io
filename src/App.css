@@ -111,8 +111,6 @@
     
     } 
 
-    
-  
   
   .fontFellEnglish2 {
     font-family: 'IM Fell English SC', serif;
@@ -163,12 +161,16 @@
     em {
       font-weight: bold;
     }
-  
+
+
+   
     .fontFellEnglish .name {
       display: block; 
       overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    margin: 1%;
+      font-size: 3rem;
     }
 
     .fontAlegreya2 {
@@ -180,12 +182,16 @@
     
     .fontAlegreya {
       font-family: 'Alegreya', serif;
-      font-size: 2rem;
+      font-size: 1.5rem;
       color: #503945;
     }
     
     .fontGaramond {
       font-family: 'EB Garamond', serif;
+    }
+
+    .offset-def {
+      margin-left: 15%;
     }
     
     .definition {
@@ -274,7 +280,7 @@
     
       .fontFellEnglish {
       font-family: 'IM Fell English SC', serif;
-      font-size: 2.5rem;
+      font-size: 4rem;
       color: #503945;
     
     } 
@@ -287,11 +293,9 @@
     
     .fontAlegreya {
       font-family: 'Alegreya', serif;
-      font-size: 1rem;
+      font-size: 2rem;
       color: #503945;
     }
-    
-   
     
     
     .definition {
@@ -433,17 +437,6 @@
     max-width: 100%;
   } 
   
-  
-  
-
-  .fontFellEnglish {
-    font-size: 3rem;
-
-  }
-  
-
- 
-  
   .definition {
     position: fixed;
     top: 40%;
@@ -454,13 +447,10 @@
   
   .offset-def {
     margin-left: 25%;
-    font-size: 2rem;
   } 
-  
-  .name {
-    display: block;
-  } 
+ 
 
+ 
   .footer {
     position: fixed;
      bottom:0;

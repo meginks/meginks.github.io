@@ -6,6 +6,7 @@ import About from './components/About.js';
 import Projects from './components/Projects.js';
 import Menu from './components/Menu';
 import SocialMenu from './components/SocialMenu';
+import Writing from './components/Writings';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Route exact path="/" component={() => <Home />} /> 
       <Route exact path="/about" component={() => <About />} />
       <Route exact path="/projects" component={() => <Projects />} />
+      <Route exact path="/writing" component={() => <Writing />} />
       <footer className="footer">
           <p>
           Megan Jones &copy; 2019 | 

@@ -1,9 +1,9 @@
 import React from 'react';
 import Menu from './Menu';
 import {Icon, Image, Card, Divider} from 'semantic-ui-react';
-import ink6 from '../svg/ink6.svg';
+import ink7 from '../svg/ink7.svg';
+import ink5 from '../svg/ink5.svg';
 import SocialMenu from './SocialMenu';
-
 
 function App() {
     return (
@@ -12,7 +12,7 @@ function App() {
         <div>
        <Icon name="code branch" size="huge" className="fontFellEnglish" />
         </div>
-        <h1 className="heading">Projects</h1>
+        <h1 className="heading">Projects</h1> 
           <div className="project-group">
             <Card.Group itemsPerRow="2" stackable> 
               <Card>
@@ -36,29 +36,15 @@ function App() {
               </Card>
 
               <Card>
-                <Card.Content> 
-                  <Card.Description>
-                  <Image src="https://images.unsplash.com/photo-1503596476-1c12a8ba09a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" alt="trash" />      
-                <div className="text-container">
-                  <p className="paragraph">
-            <span className="fontFellEnglish2">Black Hole</span> is a note taking app that I created in the span of one week with a team of 3 other students at Lambda School. I created the backend of the application using Node and Express.
-            </p>
-            <Divider horizontal><Icon name="code" /></Divider>
-            <p className="paragraph">
-            For further reading and reference: See <em><a target="_blank" href="https://github.com/april-blackhole-lambda/backend">the code. </a></em>
-            </p>
-            </div>
-                  </Card.Description>
-                </Card.Content>
-              </Card>
-
-              <Card>
                 <Card.Content>
                   <Image src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=1050&q=80" alt="grading" /> 
                   <Card.Description>
                   <div className="text-container">
              <p className="paragraph">
-            <span className="fontFellEnglish2">Life GPA</span> is an task management app that I created in the span of one week with a team of 4 other students at Lambda School. I created the frontend portion using React and CSS. 
+            <span className="fontFellEnglish2">Life GPA</span> is an task management app that I created in the span of one week with a team of 4 other students at Lambda School. I created the frontend portion using React, Redux and CSS. This was the first real project I had created using React, so I think it really cemented my knowledge of how state operates in it.
+            </p> 
+            <p className="paragraph">
+              If I were to go back and improve the app, I would improve the timing, the design, and the way that the GPA is calculated so that it's a smoother user experience.
             </p>
             <Divider horizontal><Icon name="code" /></Divider>
             <p className="paragraph">
@@ -70,23 +56,26 @@ function App() {
               </Card>
               <Card>
                 <Card.Content>
-                  <Image src="https://images.unsplash.com/photo-1549354324-290af3126793?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="students" />
+                  <Image src="https://images.unsplash.com/photo-1485815457792-d1a966f9bde0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="ink pen" /> 
                   <Card.Description>
                   <div className="text-container">
-            <p className="paragraph">
-            <span className="fontFellEnglish2">International Rural School Report</span> is a resource management application for rural schools that I created in the span of one week with a team of 5 other students at Lambda School. I created the marketing page for the app using HTML, CSS (Less) and vanilla Javascript. I also wrote all of the copy.
-            </p>
+             <p className="paragraph">
+            <span className="fontFellEnglish2">This Site</span> is also a project of mine. At the risk of being meta -- you know, adding my portfolio as a project on my portfolio -- I'm including it here. I designed and created it using a combination of React, vanilla CSS, and Semantic UI. The trickiest part was probably figuring out the CSS animations to make the ink spill on the page, but I had a lot of fun making it.
+            </p> 
             <Divider horizontal><Icon name="code" /></Divider>
             <p className="paragraph">
-            For further reading and reference: See <em><a href="https://github.com/internation-rural-school-report/irsr-marketing-page-mj" target="_blank">the code </a></em> and <em><a href="https://silly-fermi-9306d2.netlify.com/" target="_blank">the deployed site.</a></em>
+            For further reading and reference: See <em><a href="https://github.com/meginks/portfolio-site" target="_blank">the code </a></em>and click around because you're already here.
             </p>
-        </div> 
+        </div>
                   </Card.Description>
                 </Card.Content>
               </Card>
               </Card.Group> 
               </div>
         </div>
+        <div className="splatter2">
+            <img src={ink5} alt="inksplat" />
+          </div>
       </div>
     );
   }

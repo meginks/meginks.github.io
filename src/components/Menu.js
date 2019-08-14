@@ -9,9 +9,10 @@ render() {
     return (
         <>
         <div className="menu">
-        <Link to="/">home</Link>
-        <Link to="/about">about</Link>
-        <Link to="/projects">projects</Link>
+        <Link className="menu-item" to="/">home</Link>
+        <Link className="menu-item" to="/about">about</Link>
+        <Link className="menu-item" to="/projects">projects</Link>
+        <Link className="menu-item" to="/writing">writing</Link>
         </div>
         </>
     )

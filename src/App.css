@@ -1,83 +1,283 @@
-
-  /** VARIABLES **/ 
-  :root {
-    --text-color: #503945;
-  }
-  
-  
-    /** MOBILE STYLES ***/ 
-  
-  html, #app, body, #app>div {
-    height: 100%;
-   background-color: #ece9ea;
-   width: 100%;
-  }
-
-  .home {
-    height: 100%;
-    width: 100%;
-  }
-
-  .ui .divider {
-    color: var(--text-color);
-  }
-
-  .menu {
-    font-family: 'IM Fell English SC', serif;
-    font-size: 2rem;
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-between;
-    margin: 1rem;
-    padding: 1rem;
-    
-  }
+/** VARIABLES **/
+:root {
+  --text-color: #503945;
+}
 
 
-  .header {
-    font-size: 2rem;
-  }
-  
-    
-  .heading {
-    font-family: 'IM Fell English SC', serif;
-    font-size: 2.5rem;
-    color: var(--text-color);
-  }
-  
-  .text-container {
-    font-family: 'Alegreya', serif;
-    margin: 2rem 1rem;
-    padding: 1rem 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  } 
-  
-  .text-container p {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  .quill {
-    max-width: 100px;
-    max-height: 100px;
-    padding: .5rem;
-    margin: .5rem;
-  }
-  
-  .splatter {
-    display:none;
-  }
+/** MOBILE STYLES ***/
 
-  .splatter2 {
+html,
+#app,
+body,
+#app>div {
+  height: 100%;
+  background-color: #ece9ea;
+  width: 100%;
+}
+
+.home {
+  height: 100%;
+  width: 100%;
+}
+
+.ui .divider {
+  color: var(--text-color);
+}
+
+.menu {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem;
+  padding: 1rem;
+
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-item {
+  margin: .25rem;
+}
+
+
+.header {
+  font-size: 2rem;
+}
+
+
+.heading {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 2.5rem;
+  color: var(--text-color);
+}
+
+.text-container {
+  font-family: 'Alegreya', serif;
+  margin: 2rem 1rem;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-container p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+
+.splatter {
+  display: none;
+}
+
+.splatter2 {
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 70%;
+  z-index: 800;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1.0s;
+  animation-duration: 1.0s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+
+.splatter3 {
+  display: block;
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  z-index: 700;
+  height: 200px;
+  width: 250px;
+  text-align: center;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1.0s;
+  animation-duration: 1.0s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.ink {
+  display: none;
+}
+
+.fontFellEnglish {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 2rem;
+  color: var(--text-color);
+
+}
+
+
+.fontFellEnglish2 {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.fontAlegreya {
+  font-family: 'Alegreya', serif;
+  font-size: 2rem;
+  color: #503945;
+}
+
+
+Link {
+  margin: 1rem;
+  padding: 1rem;
+  color: #2f9c48;
+}
+
+li a {
+  color: var(--text-color);
+}
+
+
+li:hover {
+  color: #2f9c48;
+  text-decoration: underline;
+}
+
+li a {
+  color: var(--text-color);
+}
+
+li a:hover {
+  color: #2f9c48
+}
+
+a {
+  color: var(--text-color);
+}
+
+a:hover {
+  color: #2f9c48;
+  text-decoration: underline;
+}
+
+em {
+  font-weight: bold;
+}
+
+.fontFellEnglish .name {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 1%;
+  font-size: 3rem;
+}
+
+.fontAlegreya2 {
+  font-family: 'Alegreya', serif;
+  font-size: 1.5rem;
+  color: #503945;
+}
+
+
+.fontAlegreya {
+  font-family: 'Alegreya', serif;
+  font-size: 1.5rem;
+  color: #503945;
+}
+
+.fontGaramond {
+  font-family: 'EB Garamond', serif;
+}
+
+.offset-def {
+  margin-left: 15%;
+}
+
+.definition {
+  top: 25%;
+  left: 25%;
+  font-size: 1rem;
+  padding: .5rem;
+  margin: .5rem;
+}
+
+.offset-def {
+  font-size: 1rem;
+}
+
+.definition {
+  display: block;
+
+}
+
+.avatar-me {
+  border-radius: 50%;
+  border: 1px solid var(--text-color);
+  text-align: center;
+  margin: .5rem;
+  max-width: 200px;
+  -webkit-filter: grayscale(60%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(60%);
+}
+
+.ui .image {
+  border-radius: 3%;
+  -webkit-filter: grayscale(60%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(60%);
+}
+
+.project-group {
+  width: 80%;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: bottom;
+  justify-content: center;
+  font-family: 'IM Fell English SC', serif;
+  font-size: 1rem;
+  padding: .5rem;
+  background-color: #ece9ea;
+
+}
+
+
+/* TABLET STYLES **/
+
+@media screen and (min-device-width: 400px) {
+
+  .splatter3 {
     display: block;
     position: absolute;
     top: 10%;
-    left: 70%;
+    left: 10%;
     z-index: 800;
-    height: 100px;
-    width: 100px;
+    height: 300px;
+    width: 300px;
     text-align: center;
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
@@ -88,15 +288,14 @@
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
   }
- 
-  
-  .splatter3 {
+
+  .splatter2 {
     display: block;
     position: absolute;
-    top: 65%;
-    left: 10%;
-    z-index: 700;
-    height: 200px;
+    top: 10%;
+    left: 70%;
+    z-index: 800;
+    height: 250px;
     width: 250px;
     text-align: center;
     -webkit-animation-name: fadeIn;
@@ -108,252 +307,52 @@
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
   }
-  
-  .ink {
-    display:none;
-  }
-    
-    .fontFellEnglish {
-      font-family: 'IM Fell English SC', serif;
-      font-size: 2rem;
-      color: var(--text-color);
-    
-    } 
 
-  
+  .fontFellEnglish {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 4rem;
+    color: #503945;
+  }
+
   .fontFellEnglish2 {
     font-family: 'IM Fell English SC', serif;
     font-size: 1.5rem;
-    color: var(--text-color);
-  }
-  
-  .fontAlegreya {
-    font-family: 'Alegreya', serif;
-    font-size: 2rem;
     color: #503945;
   }
-  
-  
-    Link {
-      margin: 1rem;
-      padding: 1rem;
-      color: #2f9c48;
-    }
-  
-    li a {
-      color: var(--text-color);
-    }
- 
-    
-    li:hover {
-      color:#2f9c48;
-      text-decoration: underline;
-    }
-    
-    li a {
-      color:var(--text-color);
-    }
-    
-    li a:hover {
-      color: #2f9c48
-    }
-  
-    a {
-      color: var(--text-color);
-    }
-    
-    a:hover {
-      color: #2f9c48;
-      text-decoration: underline;
-    }
-    
-    em {
-      font-weight: bold;
-    }
 
+  .fontAlegreya {
+    font-family: 'Alegreya', serif;
+    font-size: 2.5rem;
+    color: #503945;
+  }
 
+  .definition {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    padding: .5rem;
+    margin: .5rem;
+  }
 
-   
-    .fontFellEnglish .name {
-      display: block; 
-      overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    margin: 1%;
-      font-size: 3rem;
-    }
+  .offset-def {
+    margin-left: 20%;
+    font-size: 1rem;
+  }
 
-    .fontAlegreya2 {
-      font-family: 'Alegreya', serif;
-      font-size: 1.5rem;
-      color: #503945;
-    }
-    
-    
-    .fontAlegreya {
-      font-family: 'Alegreya', serif;
-      font-size: 1.5rem;
-      color: #503945;
-    }
-    
-    .fontGaramond {
-      font-family: 'EB Garamond', serif;
-    }
+  .paragraph {
+    color: #503945;
+    font-family: 'Alegreya', serif;
+    text-align: left;
+    font-size: 1.25rem;
+  }
 
-    .offset-def {
-      margin-left: 15%;
-    }
-    
-    .definition {
-      top: 25%;
-      left: 25%;
-      font-size: 1rem;
-      padding: .5rem;
-      margin: .5rem;
-    }
-    
-    .offset-def {
-      font-size: 1rem;
-    }
-  
-    .definition {
-      display: block;
-      
-    }
-  
-    .avatar-me {
-      border-radius: 50%;
-      border: 1px solid var(--text-color);
-      text-align: center;
-      margin: .5rem; 
-      max-width: 200px;
-      -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
-      filter: grayscale(60%);
-    }
+}
 
-    .ui .image {
-      border-radius: 3%;
-      -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
-      filter: grayscale(60%); 
-    }
+/** DESKTOP STYLES ***/
 
-    .project-group {
-      width: 80%;
-      margin: 1rem;
-      padding: 1rem;
-    }
+@media screen and (min-device-width: 700px) {
 
-
-    .footer {
-      position: fixed;
-       bottom:0;
-       width:100%;
-       display: flex;
-       align-items: bottom;
-       justify-content: center;
-       font-family: 'IM Fell English SC', serif;
-       font-size: 1rem;
-       padding: .5rem;
-       background-color: #ece9ea;
-        
-    } 
-  
-    
-  
-  
-    * TABLET STYLES ** 
-    @media only screen and (min-width: 400px) {
-   
-      .splatter3 {
-        display: block;
-        position: absolute;
-        top: 10%;
-        left: 10%;
-        z-index: 800;
-        height: 300px;
-        width: 300px;
-        text-align: center;
-        -webkit-animation-name: fadeIn;
-        animation-name: fadeIn;
-        -webkit-animation-duration: 1.0s;
-        animation-duration: 1.0s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-        -webkit-animation-delay: 2s;
-        animation-delay: 2s;
-      }
-    
-
-      .splatter2 {
-        display: block;
-        position: absolute;
-        top: 10%;
-        left: 70%;
-        z-index: 800;
-        height: 250px;
-        width: 250px;
-        text-align: center;
-        -webkit-animation-name: fadeIn;
-        animation-name: fadeIn;
-        -webkit-animation-duration: 1.0s;
-        animation-duration: 1.0s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-        -webkit-animation-delay: 2s;
-        animation-delay: 2s;
-      }
-     
-    
-    
-      .fontFellEnglish {
-      font-family: 'IM Fell English SC', serif;
-      font-size: 4rem;
-      color: #503945;
-    
-    } 
-    
-    .fontFellEnglish2 {
-      font-family: 'IM Fell English SC', serif;
-      font-size: 1.5rem;
-      color: #503945;
-    }
-    
-    .fontAlegreya {
-      font-family: 'Alegreya', serif;
-      font-size: 2.5rem;
-      color: #503945;
-    }
-    
-    
-    .definition {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      font-size: 2rem;
-      padding: .5rem;
-      margin: .5rem;
-    }
-    
-    .offset-def {
-      margin-left: 20%;
-      font-size: 1rem;
-    }
-    
-    
-    .paragraph {
-      color: #503945;
-      font-family: 'Alegreya', serif;
-      text-align: left;
-      font-size: 1.25rem;
-    
-    } 
-    
-    }
-    
-    /** DESKTOP STYLES ***/
-  
-    @media only screen and (min-width: 700px) {
-  
   .ink {
     display: block;
     width: 50px;
@@ -367,7 +366,7 @@
     -webkit-animation-delay: .5s;
     animation-delay: .5s;
   }
-  
+
   .splatter {
     display: block;
     position: absolute;
@@ -384,7 +383,7 @@
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
   }
-  
+
 
 
   .splatter3 {
@@ -405,46 +404,57 @@
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
   }
-  
+
   @-webkit-keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
-  
+
   @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
+
   @-webkit-keyframes zoomOut {
     0% {
       opacity: 0;
       -webkit-transform: scale3d(.3, .3, .3);
-              transform: scale3d(.3, .3, .3);
+      transform: scale3d(.3, .3, .3);
     }
-  
+
     50% {
       opacity: 1;
     }
   }
-  
+
   @keyframes zoomOut {
     0% {
       opacity: 0;
       -webkit-transform: scale3d(.3, .3, .3);
-              transform: scale3d(.3, .3, .3);
+      transform: scale3d(.3, .3, .3);
     }
-  
+
     50% {
       opacity: 1;
     }
   }
-  
+
   .zoomIn {
     -webkit-animation-name: zoomIn;
-            animation-name: zoomIn;
+    animation-name: zoomIn;
   }
-  
-  
+
+
   .fixed-bottom {
     position: fixed;
     top: 80%;
@@ -452,18 +462,18 @@
   }
 
 
-  
+
   .project-icon {
-    
+
     padding: 2rem;
-  
+
   }
-  
+
   .container {
     height: 100%;
     max-width: 100%;
-  } 
-  
+  }
+
   .definition {
     position: fixed;
     top: 40%;
@@ -471,11 +481,11 @@
     padding: .5rem;
     margin: .5rem;
   }
-  
+
   .offset-def {
     margin-left: 25%;
-  } 
- 
+  }
+
 
   .splatter2 {
     display: block;
@@ -495,22 +505,22 @@
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
   }
- 
 
- 
+
+
   .footer {
     position: fixed;
-     bottom:0;
-     width:100%;
-     display: flex;
-     align-items: bottom;
-     justify-content: center;
-     font-family: 'IM Fell English SC', serif;
-     font-size: 1.5rem;
-     padding: .5rem;
-     background-color: #ece9ea;
-      
-  } 
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: bottom;
+    justify-content: center;
+    font-family: 'IM Fell English SC', serif;
+    font-size: 1.5rem;
+    padding: .5rem;
+    background-color: #ece9ea;
 
-  
-    }
+  }
+
+
+}

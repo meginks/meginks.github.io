@@ -24,6 +24,15 @@ body,
   color: var(--text-color);
 }
 
+.fontFellEnglish .name {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 1%;
+  font-size: 3rem;
+}
+
 .menu {
   font-family: 'IM Fell English SC', serif;
   font-size: 2rem;
@@ -34,6 +43,10 @@ body,
   padding: 1rem;
 
 } 
+
+.menu-item {
+  margin: .25rem;
+}
 
 .flex-center {
   display: flex;
@@ -128,7 +141,8 @@ body,
   font-size: 2rem;
   color: var(--text-color);
 
-}
+} 
+
 
 
 .fontFellEnglish2 {
@@ -184,14 +198,7 @@ em {
 
 
 
-.fontFellEnglish .name {
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  margin: 1%;
-  font-size: 3rem;
-}
+
 
 .fontAlegreya2 {
   font-family: 'Alegreya', serif;
@@ -319,7 +326,7 @@ em {
 
   .fontFellEnglish {
     font-family: 'IM Fell English SC', serif;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #503945;
 
   }
@@ -462,10 +469,7 @@ em {
     }
   }
 
-  .zoomIn {
-    -webkit-animation-name: zoomIn;
-    animation-name: zoomIn;
-  }
+  
 
 
   .fixed-bottom {
@@ -473,8 +477,6 @@ em {
     top: 80%;
     left: 50%;
   }
-
-
 
   .project-icon {
 

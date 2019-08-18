@@ -28,7 +28,7 @@ function App() {
             </p>
             <Divider horizontal><Icon name="code" /></Divider>
             <p className="paragraph">
-            For further reading and reference: See <em><a href="https://github.com/labs13-recruiter-rule" target="_blank">the code </a></em> and <em><a href="https://recruiterrules.com" target="_blank">the deployed site.</a></em>
+            See <em><a href="https://github.com/labs13-recruiter-rule" target="_blank">the code </a></em> and <em><a href="https://recruiterrules.com" target="_blank">the deployed site.</a></em>
             </p>
             </div>
                   </Card.Description>
@@ -48,7 +48,7 @@ function App() {
             </p>
             <Divider horizontal><Icon name="code" /></Divider>
             <p className="paragraph">
-            For further reading and reference: See <em><a href="https://github.com/lifegpa/life-gpa-react-app" target="_blank">the code </a></em> and <em><a href="http://lifegpabuildweek.netlify.com/" target="_blank">the deployed site.</a></em>
+            See <em><a href="https://github.com/lifegpa/life-gpa-react-app" target="_blank">the code </a></em> and <em><a href="http://lifegpabuildweek.netlify.com/" target="_blank">the deployed site.</a></em>
             </p>
         </div>
                   </Card.Description>
@@ -60,11 +60,11 @@ function App() {
                   <Card.Description>
                   <div className="text-container">
              <p className="paragraph">
-            <span className="fontFellEnglish2">This Site</span> is also a project of mine. At the risk of being meta -- you know, adding my portfolio as a project on my portfolio -- I'm including it here. I designed and created it using a combination of React, vanilla CSS, and Semantic UI. The trickiest part was probably figuring out the CSS animations to make the ink spill on the page, but I had a lot of fun making it.
+            <span className="fontFellEnglish2">This Site</span> is also a project of mine. At the risk of being too meta -- you know, adding my portfolio as a project on my portfolio -- I'm including it here. I designed and created it using a combination of React, vanilla CSS, and Semantic UI. The trickiest part was probably figuring out the CSS animations to make the ink spill on the page, but I had a lot of fun making it.
             </p> 
             <Divider horizontal><Icon name="code" /></Divider>
             <p className="paragraph">
-            For further reading and reference: See <em><a href="https://github.com/meginks/portfolio-site" target="_blank">the code </a></em>and click around because you're already here.
+            See <em><a href="https://github.com/meginks/portfolio-site" target="_blank">the code </a></em>and click around for the deployed site because you're already here.
             </p>
         </div>
                   </Card.Description>

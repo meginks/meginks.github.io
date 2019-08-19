@@ -9,7 +9,8 @@ import SocialMenu from './SocialMenu';
 
 function Writing() {
     return (
-      <div>
+      <>
+        <Menu />
         <div className="text-container">
         <div>
         <Icon name="pencil alternate" size="huge" className="fontFellEnglish" /> 
@@ -68,10 +69,10 @@ case is a new, complete and unedited edition of Vanzetti’s letters, apart from
               </Card.Group> 
               </div>
         </div>
-        <div className="splatter2">
-            <img src={ink7} alt="inksplat" />
-          </div>
-      </div>
+   
+          <SocialMenu />
+
+      </>
     );
   }
   

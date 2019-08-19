@@ -8,11 +8,9 @@ import ink1 from '../svg/ink1.svg';
 function App() {
     return (
       <div>
+        <Menu />
     <Grid>
         <Grid.Column>
-          <div className="splatter2">
-            <img src={ink1} alt="inksplat" />
-          </div>
         <div className="fontAlegreya2 text-container">
             <div>
             <img src="https://avatars3.githubusercontent.com/u/38929577?s=460&v=4" alt="Megan Jones" className="avatar-me" />
@@ -27,6 +25,7 @@ function App() {
         </div>
         </Grid.Column>
         </Grid>
+        <SocialMenu />
       </div>
     );
   }

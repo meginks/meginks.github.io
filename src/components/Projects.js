@@ -5,9 +5,11 @@ import ink7 from '../svg/ink7.svg';
 import ink5 from '../svg/ink5.svg';
 import SocialMenu from './SocialMenu';
 
+
 function App() {
     return (
-      <div>
+      <>
+        <Menu />
         <div className="text-container">
         <div>
        <Icon name="code branch" size="huge" className="fontFellEnglish" />
@@ -73,10 +75,10 @@ function App() {
               </Card.Group> 
               </div>
         </div>
-        <div className="splatter2">
-            <img src={ink5} alt="inksplat" />
+          <div className="border">
+          <SocialMenu /> 
           </div>
-      </div>
+      </>
     );
   }
   

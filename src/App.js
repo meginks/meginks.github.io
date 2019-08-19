@@ -10,11 +10,11 @@ import Contact from './components/Contact';
 const App = () => {
   return (
     <div id="app">
-      <Route exact path="/" component={() => <Home />} /> 
-      <Route exact path="/about" component={() => <About />} />
-      <Route exact path="/projects" component={() => <Projects />} />
-      <Route exact path="/writing" component={() => <Writing />} />
-      <Route exact path="/contact" component={() => <Contact />} />
+      <Route exact path="/" component={Home} /> 
+      <Route exact path="/about" component={About} />
+      <Route exact path="/projects" component={Projects} />
+      <Route exact path="/writing" component={Writing} />
+      <Route exact path="/contact" component={Contact} />
     </div>
   )
 }

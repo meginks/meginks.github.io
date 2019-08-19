@@ -275,7 +275,9 @@ em {
   margin: .5rem;
 }
 
-
+.social-container {
+  margin-bottom: 2rem;
+}
 
 .ink {
   display: block;
@@ -342,8 +344,8 @@ em {
   animation-duration: 1.0s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 } 
 
 @media screen and (max-width: 900px) {

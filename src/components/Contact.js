@@ -13,7 +13,7 @@ function Contact() {
         <div>
        <Icon name="comment alternate outline" size="huge" className="fontFellEnglish" />
         </div>
-        <h1 className="heading">Contact</h1> 
+        <h1 className="heading">Contact Megan Jones</h1> 
         <img src={Frasier} alt="my cat reading a book" className="avatar-me" />
         <p>Find me on social media or send me an email.</p>
         <div className="social-container">

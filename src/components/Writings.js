@@ -3,6 +3,7 @@ import Menu from './Menu';
 import {Icon, Image, Card, Divider} from 'semantic-ui-react';
 import ink7 from '../svg/ink7.svg';
 import sacvan from '../images/vittimacapitalistica.jpg';
+import sacvan2 from '../images/sacvan.jpg';
 import quill1 from '../svg/quill1.svg';
 import ink5 from '../svg/ink5.svg';
 import SocialMenu from './SocialMenu';
@@ -18,6 +19,25 @@ function Writing() {
         <h1 className="heading">Writing</h1> 
           <div className="project-group">
             <Card.Group itemsPerRow="2" stackable> 
+            <Card>
+                <Card.Content>
+                  <Image src="https://images.unsplash.com/photo-1544906210-073c36ccee65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="wooden mail rack" /> 
+                  <Card.Description>
+                  <div className="text-container">
+             <p className="paragraph">
+            <span className="fontFellEnglish2">Sacco and Vanzetti Must Live!: A New Website 92 Years Later</span>
+            </p>
+            <p className="paragraph">
+            "That’s why today, this 92nd anniversary of their executions, I’m thrilled to announce a new website — <a target="_blank" href="https://medium.com/@meganjones.dev/sacco-and-vanzetti-must-live-a-new-website-92-years-later-b986b39d1b59">VanzettiandSacco.com</a>."
+            </p>
+            <Divider horizontal><Icon name="right quote" /></Divider>
+            <p className="paragraph">
+              Read the full text <em><a target="_blank" href="https://medium.com/@meganjones.dev/sacco-and-vanzetti-must-live-a-new-website-92-years-later-b986b39d1b59">here</a></em>.
+            </p>
+        </div>
+                  </Card.Description>
+                </Card.Content>
+              </Card>
             <Card>
                 <Card.Content>
                   <Image src="https://miro.medium.com/max/875/1*B_7lJQZsJbrSOlrs_yDJjg.jpeg" alt="person writing at computer" /> 

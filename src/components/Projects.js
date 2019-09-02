@@ -3,6 +3,7 @@ import Menu from './Menu';
 import {Icon, Image, Card, Divider} from 'semantic-ui-react';
 import ink7 from '../svg/ink7.svg';
 import ink5 from '../svg/ink5.svg';
+import sacvan from '../images/sacvan.jpg';
 import SocialMenu from './SocialMenu';
 
 
@@ -17,6 +18,43 @@ function App() {
         <h1 className="heading">Projects</h1> 
           <div className="project-group">
             <Card.Group itemsPerRow="2" stackable> 
+            <Card>
+                <Card.Content>
+                  <Card.Description>
+                    <Image src="https://images.unsplash.com/photo-1447069387593-a5de0862481e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="letter"/> 
+                    <div className="text-container">
+                  <p className="paragraph">
+            <span className="fontFellEnglish2">Vanzetti and Sacco</span> is a digital repository of all things Sacco and Vanzetti. I spent 2013 to 2019 compiling a traditional book edition of Sacco and Vanzetti's letters, but now it's morphing into a digital edition. I'm building the site out so that it can house all sorts of Sacco and Vanzetti-related research, art, writing, etc. 
+            </p>
+            <p className="paragraph">
+              The site is built in React because there will be some interactive elements added to the site that will benefit from it. I am using vanilla CSS and Semantic UI for styling.
+            </p>
+            <Divider horizontal><Icon name="code" /></Divider>
+            <p className="paragraph">
+            See <em><a href="https://github.com/meginks/vanzetti-and-sacco" target="_blank">the code </a></em> and <em><a href="https://vanzettiandsacco.com" target="_blank">the deployed site.</a></em>
+            </p>
+            </div>
+                  </Card.Description>
+                </Card.Content>
+              </Card>
+              <Card>
+                <Card.Content>
+                  <Card.Description>
+                    <Image src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" alt="tacos" /> 
+                    <div className="text-container">
+                  <p className="paragraph">
+            <span className="fontFellEnglish2">Let's Get Tacos</span> is a taco-based social media app that was created for an external stakeholder as a part of the Lambda School capstone project experience (Labs). I was the team lead on this project and worked with a team of 3 web developers to plan and complete 3 successful product releases.  
+            </p>
+            <p className="paragraph"> We used Node and Express on the backend, PostgreSQL for the database, Firebase for the authentication, and React, Material UI, and CSS for the frontend. In addition to my team lead responsibilities like holding daily standup meetings, communicating with our stakeholder, and keeping momentum up for the team, I also set up Google Tag Manager and analytics tracking, set up the custom middleware to ensure that data stays secure, and created the connection between our Firebase and SQL databases. 
+            </p>
+            <Divider horizontal><Icon name="code" /></Divider>
+            <p className="paragraph">
+            See <em><a href="https://github.com/labs14-tacos" target="_blank">the code </a></em> and <em><a href="https://time4tacos.com" target="_blank">the deployed site.</a></em>
+            </p>
+            </div>
+                  </Card.Description>
+                </Card.Content>
+              </Card>
               <Card>
                      <Card.Content>   
                   <Card.Description>
@@ -58,7 +96,7 @@ function App() {
               </Card>
               <Card>
                 <Card.Content>
-                  <Image src="https://images.unsplash.com/photo-1485815457792-d1a966f9bde0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="ink pen" /> 
+                  <Image src="https://images.unsplash.com/photo-1498721454196-e1fe723c0374?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80" alt="ink pen" /> 
                   <Card.Description>
                   <div className="text-container">
              <p className="paragraph">
